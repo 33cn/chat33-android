@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_send_selector">
+
+        <com.fzm.chat33.widget.ExpandQMUILinkTextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="40dp"
+            android:maxWidth="240dp"
+            android:paddingStart="15dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="9dp"
+            android:textSize="16sp"
+            app:qmui_linkBackgroundColor="@color/app_color_link_gray"
+            app:qmui_linkTextColor="@color/app_color_link_blue"
+            tools:text="这里是消息" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_text_packet"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/rl_chat"
+        android:layout_alignEnd="@+id/rl_chat"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_text_packet" />
+
+</RelativeLayout>

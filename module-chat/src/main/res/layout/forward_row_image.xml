@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fzm.chat33.widget.ChatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_grey_r4"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="09-06 10:19"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fzm.chat33.widget.ChatAvatarView
+            android:layout_marginStart="15dp"
+            android:id="@+id/iv_user_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/default_avatar_round" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/iv_user_head"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/chat_room_gray2"
+            android:textSize="12sp" />
+
+        <com.fuzamei.common.widget.RoundRectImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/iv_user_head"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:scaleType="centerCrop"
+            app:radius="2dp" />
+    </RelativeLayout>
+</com.fzm.chat33.widget.ChatLinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/basic_shape_common_dialog_color"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/chat_need_answer_question"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_name_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="end"
+        android:text="0/20"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv_name_length"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_grey_r4"
+        android:gravity="start"
+        android:hint="@string/chat_input_answer"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="19dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="19dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textColorHint="@color/chat_text_grey_light"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/basic_divide_light" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_bottom_divider"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/basic_sl_btn_left"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/chat_action_cancel"
+            android:textColor="@color/basic_text_accent"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_choice_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/basic_divide_light" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/basic_sl_btn_right"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/chat_action_confirm"
+            android:textColor="@color/basic_text_accent"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

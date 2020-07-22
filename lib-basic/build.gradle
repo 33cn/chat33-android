@@ -1,0 +1,61 @@
+apply from: config
+apply from: flavor_config
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    api core
+    api appcompatV7
+    api design
+    api recyclerview
+    api cardview
+    api constraintLayout
+    api annotation
+
+    api dslAdapter
+    api arouterApi
+    kapt arouterCompiler
+    annotationProcessor arouterCompiler
+    api okhttp
+    api loggingInterceptor
+    api gson
+    api log
+    api retrofit2
+    api adapterRxjava2
+    api converterGson
+    api rxjava2
+    api rxandroid
+    api glide
+    kapt glideCompiler
+    annotationProcessor glideCompiler
+    api eventbus
+    api easypermissions
+    api smartRefreshLayout
+    api multidex
+    api zxing
+    api zxingAndroid
+    api wcdbRoom
+    api roomRxjava2
+    kapt roomCompiler
+    annotationProcessor roomCompiler
+    api crabsdk
+    api crabndk
+    api lifeCycle
+    api lifeCycleKtx
+    api viewModelKtx
+    // kodein
+    api kodein
+    api kodeinConf
+    api kodeinJxInject
+//    api kotdeinAndroidX
+
+    api kotlin_coroutines_core
+    api kotlin_coroutines_android
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

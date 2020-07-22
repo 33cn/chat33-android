@@ -1,0 +1,62 @@
+<resources>
+    //ttf图标名称
+    <string name="icon_hongbao" translatable="false">&#xe76e;</string>
+    <string name="icon_zhaobi" translatable="false">&#xe76d;</string>
+    <string name="icon_user_head_circle" translatable="false">&#xe76c;</string>
+    <string name="icon_yilingquhongbao" translatable="false">&#xe76b;</string>
+    <string name="icon_vipyonghu" translatable="false">&#xe76a;</string>
+    <string name="icon_vipyonghu1" translatable="false">&#xe769;</string>
+    <string name="icon_yuyin_disable" translatable="false">&#xe768;</string>
+    <string name="icon_yuyin_left_vol3" translatable="false">&#xe978;</string>
+    <string name="icon_yuyin_left_vol2" translatable="false">&#xe977;</string>
+    <string name="icon_yuyin_left_vol1" translatable="false">&#xe976;</string>
+    <string name="icon_yuyin_right_vol3" translatable="false">&#xe766;</string>
+    <string name="icon_yuyin_right_vol2" translatable="false">&#xe767;</string>
+    <string name="icon_yuyin_right_vol1" translatable="false">&#xe764;</string>
+    <string name="icon_youke_head" translatable="false">&#xe765;</string>
+    <string name="icon_yichu_out" translatable="false">&#xe763;</string>
+    <string name="icon_user_head_black" translatable="false">&#xe762;</string>
+    <string name="icon_xiangji" translatable="false">&#xe760;</string>
+    <string name="icon_miandarao" translatable="false">&#xe760;</string>
+    <string name="icon_tupian" translatable="false">&#xe75f;</string>
+    <string name="icon_take_photo" translatable="false">&#xe761;</string>
+    <string name="icon_qita_add" translatable="false">&#xe75e;</string>
+    <string name="icon_luyin_vol7" translatable="false">&#xe75d;</string>
+    <string name="icon_luyin_vol6" translatable="false">&#xe75b;</string>
+    <string name="icon_luyin_vol5" translatable="false">&#xe75a;</string>
+    <string name="icon_luyin_vol4" translatable="false">&#xe758;</string>
+    <string name="icon_luyin_vol3" translatable="false">&#xe75c;</string>
+    <string name="icon_luyin_vol2" translatable="false">&#xe757;</string>
+    <string name="icon_luyin_vol1" translatable="false">&#xe759;</string>
+    <string name="icon_yuyin_fayuyin" translatable="false">&#xe756;</string>
+    <string name="icon_yuyin_chehui" translatable="false">&#xe755;</string>
+    <string name="icon_gonggao" translatable="false">&#xe754;</string>
+    <string name="icon_liaotian" translatable="false">&#xe753;</string>
+    <string name="icon_biaoqing" translatable="false">&#xe752;</string>
+    <string name="icon_back_down" translatable="false">&#xe96d;</string>
+    <string name="icon_back_up" translatable="false">&#xe96c;</string>
+    <string name="icon_back_right" translatable="false">&#xe71e;</string>
+    <string name="icon_back_left" translatable="false">&#xe68d;</string>
+    <string name="icon_16pxcha" translatable="false">&#xe66b;</string>
+    <string name="icon_pingjiaxingxing" translatable="false">&#xe972;</string>
+    <string name="icon_kefu" translatable="false">&#xe7e3;</string>
+    <string name="icon_shenfenyanzheng" translatable="false">&#xe971;</string>
+    <string name="icon_dengji" translatable="false">&#xe72d;</string>
+
+    <string name="icon_record_too_short" translatable="false">&#xe768;</string>
+    <string name="icon_sanjiao_left" translatable="false">&#xe975;</string>
+    <string name="icon_sanjiao_right" translatable="false">&#xe60c;</string>
+
+    <string name="icon_disable_speak" translatable="false">&#xe770;</string>
+    <string name="icon_kefu_head" translatable="false">&#xe76f;</string>
+
+    <string name="icon_qq_kongjian" translatable="false">&#xe682;</string>
+    <string name="icon_qq_haoyou" translatable="false">&#xe680;</string>
+    <string name="icon_wx_quan" translatable="false">&#xe681;</string>
+    <string name="icon_wx_haoyou" translatable="false">&#xe67e;</string>
+    <string name="icon_round_normal" translatable="false">&#xe61d;</string>
+    <string name="icon_round_press" translatable="false">&#xe698;</string>
+
+    <!--新添加图标-->
+    <string name="chat_icon_identify_arrow" translatable="false">&#xe7e4;</string>
+</resources>

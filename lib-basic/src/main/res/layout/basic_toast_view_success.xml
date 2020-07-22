@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center">
+
+    <!--<ImageView
+        android:id="@+id/iv_showtoast_success"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/toast_tv_title"
+        android:layout_alignRight="@+id/toast_tv_title"
+        android:paddingTop="20px"
+        android:src="@drawable/selected_white_big"/>-->
+
+    <com.fuzamei.common.widget.FontTextView
+        android:id="@+id/iv_showtoast_success"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/toast_tv_title"
+        android:layout_alignRight="@+id/toast_tv_title"
+        android:paddingTop="10dp"
+        android:text="&#xe627;"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="@color/basic_light_grey"/>
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/toast_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_showtoast_success"
+        android:gravity="center"
+        android:textColor="@color/basic_white"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:text="@string/basic_topic" />
+
+
+
+</RelativeLayout>

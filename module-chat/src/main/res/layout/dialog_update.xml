@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:gravity="center">
+
+    <com.fzm.chat33.widget.ResizableImageView
+        android:id="@+id/iv_update_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_update_dialog_head" />
+
+    <TextView
+        android:id="@+id/tv_dlg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_update_head"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/chat_update_title"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_apk_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dlg_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_apk_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V2.3.0"
+            android:textColor="@color/chat_color_accent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_apk_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="17M"
+            android:textColor="@color/chat_color_accent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 详情 -->
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/ll_apk_info"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/tv_dlg_detail_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/chat_update_content"
+            android:textColor="@color/chat_text_grey_dark"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_main"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_update_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_update_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat_update_download_begin"
+                    android:textColor="@color/chat_color_accent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_update_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="0%"
+                    android:textColor="@color/chat_color_accent"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_update_progress"
+                style="@style/update_progressbar_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_option"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/tv_dlg_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_textblue_hollow_20"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/chat_update_cancel"
+                android:textColor="@color/chat_color_accent"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_dlg_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_textblue_solid_20"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/chat_update"
+                android:textColor="@color/chat_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

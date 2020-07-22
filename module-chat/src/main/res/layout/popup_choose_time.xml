@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_choose_time"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/chat_select_time_title"
+            android:gravity="center"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.fzm.chat33.widget.wheel.WheelView
+                android:id="@+id/wv_year"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="220dp" />
+
+            <com.fzm.chat33.widget.wheel.WheelView
+                android:id="@+id/wv_month"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="220dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#fff1ecec"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/chat_action_cancel"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#fff1ecec"/>
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/chat_action_confirm"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

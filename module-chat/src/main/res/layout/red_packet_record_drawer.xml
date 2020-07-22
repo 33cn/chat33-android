@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@drawable/shape_primary_r5"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/chat_time"
+                android:textColor="@color/chat_text_grey_light"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.pl.wheelview.WheelView
+                    android:id="@+id/wv_year"
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="1"
+                    app:itemNumber="5"
+                    app:lineColor="@color/transparent"
+                    app:maskDarkColor="@color/chat_color_primary_mask"
+                    app:maskLightColor="@color/chat_color_primary_mask"
+                    app:normalTextColor="@color/chat_text_grey_light"
+                    app:normalTextSize="14sp"
+                    app:selectedTextColor="@color/chat_text_grey_dark"
+                    app:selectedTextSize="18sp" />
+
+                <com.pl.wheelview.WheelView
+                    android:id="@+id/wv_month"
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="1"
+                    app:itemNumber="5"
+                    app:lineColor="@color/transparent"
+                    app:maskDarkColor="@color/chat_color_primary_mask"
+                    app:maskLightColor="@color/chat_color_primary_mask"
+                    app:normalTextColor="@color/chat_text_grey_light"
+                    app:normalTextSize="14sp"
+                    app:selectedTextColor="@color/chat_text_grey_dark"
+                    app:selectedTextSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/chat_tips_coin_type"
+                android:textColor="@color/chat_text_grey_light"
+                android:textSize="13sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sl_red_packet_hollow"
+            android:gravity="center"
+            android:text="@string/chat_reset"
+            android:textColor="@color/chat_red_packet"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sl_red_packet"
+            android:gravity="center"
+            android:text="@string/chat_action_confirm"
+            android:textColor="@color/chat_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+apply from: config
+apply from: versions
+apply from: flavor_config
+
+android {
+
+    defaultConfig {
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    sourceSets {
+        // 将数据库schemas文件包含到assets中
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:core:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation roomTest
+    api files("libs/walletapi.aar")
+    api luban
+    api 'com.aliyun.dpa:oss-android-sdk:2.9.3'
+    implementation project(':lib-componentservice')
+    implementation kotlin_coroutines_core
+    implementation kotlin_coroutines_android
+    kapt roomCompiler
+    annotationProcessor roomCompiler
+    kapt arouterCompiler
+}

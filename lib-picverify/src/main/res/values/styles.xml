@@ -1,0 +1,13 @@
+<resources>
+
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item> <!-- 设置title -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item> <!-- 设置边框 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 设置半透明 -->
+        <item name="android:windowFullscreen">true</item> <!-- 设置全屏 -->
+
+    </style>
+</resources>

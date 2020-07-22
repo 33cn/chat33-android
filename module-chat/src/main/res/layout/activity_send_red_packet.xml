@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_color_status_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.fuzamei.componentservice.widget.CommonTitleBar
+            android:id="@+id/ctb_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_coin_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/img_operate">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/chat_tips_coin_type"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/coin_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/right_arrow"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp"
+                        tools:text="YCC" />
+
+                    <com.fuzamei.common.widget.IconView
+                        android:id="@+id/right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/icon_back_right"
+                        android:textColor="@color/chat_text_grey_dark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/img_operate">
+
+                    <ImageView
+                        android:id="@+id/packet_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:src="@mipmap/icon_packet_type_lucky" />
+
+                    <TextView
+                        android:id="@+id/coin_num_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/packet_type"
+                        android:text="@string/chat_tips_total_num"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_coin_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/coin_unit1"
+                        android:layout_toEndOf="@+id/coin_num_tips"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp"
+                        tools:hint="填入数额" />
+
+                    <TextView
+                        android:id="@+id/coin_unit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp"
+                        tools:text="YCC" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/coin_assets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="end"
+                    android:textColor="@color/chat_color_accent"
+                    tools:text="可用 " />
+
+                <RelativeLayout
+                    android:id="@+id/rl_packet_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/img_operate">
+
+                    <TextView
+                        android:id="@+id/packet_num_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/chat_tips_packet_num"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_packet_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/unit"
+                        android:layout_toEndOf="@+id/packet_num_tips"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:hint="@string/chat_tips_packet_num_hint"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/chat_tips_packet_unit"
+                        android:textColor="@color/chat_text_grey_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/img_operate">
+
+                        <EditText
+                            android:id="@+id/et_packet_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tv_remark_num"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/chat_tips_default_remark"
+                            android:textColor="@color/chat_text_grey_dark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_remark_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/chat_tips_num_20"
+                            android:textColor="@color/chat_text_grey_light" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_mode"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@mipmap/ic_packet_mode" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/send_red_packet"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/bg_round_red_solid_25"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/chat_action_send_red_packet"
+                    android:textColor="@color/chat_white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coin_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/specialtext"
+                    android:textColor="@color/chat_text_grey_dark"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/coin_unit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/chat_text_grey_dark"
+                    android:textSize="17sp"
+                    tools:text="YCC" />
+
+                <TextView
+                    android:id="@+id/tv_group_packet_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/chat_color_accent"
+                    tools:text="群红包每次收取1TSC手续费" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/send_coin_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

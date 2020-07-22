@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_EAF6FF">#E8F3FF</color>
+    <color name="chat_color_title">#007CFF</color>
+    <color name="chat_color_accent">#007CFF</color>
+</resources>

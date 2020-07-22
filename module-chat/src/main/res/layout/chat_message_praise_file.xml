@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_item"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <ImageView
+            android:id="@+id/iv_file_type"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/icon_file_doc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.qmuiteam.qmui.widget.QMUIProgressBar
+            android:id="@+id/pb_file"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_file_type"
+            app:layout_constraintEnd_toEndOf="@id/iv_file_type"
+            app:layout_constraintStart_toStartOf="@id/iv_file_type"
+            app:layout_constraintTop_toTopOf="@id/iv_file_type"
+            app:qmui_background_color="@color/chat_transparent"
+            app:qmui_progress_color="@color/color_EAF6FF"
+            app:qmui_stroke_width="15dp"
+            app:qmui_type="type_circle"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/chat_text_grey_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_file_type"
+            app:layout_constraintLeft_toRightOf="@id/iv_file_type"
+            app:layout_constraintTop_toTopOf="@id/iv_file_type"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="这是文件名.docx" />
+
+        <View
+            android:id="@+id/forward_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/chat_forward_divider_receive"
+            app:layout_constraintTop_toBottomOf="@id/iv_file_type" />
+
+        <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_text_grey_light"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_file_type"
+            app:layout_constraintTop_toBottomOf="@id/forward_divider"
+            tools:text="文件 0B" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

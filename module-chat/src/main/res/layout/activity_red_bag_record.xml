@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_color_primary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/chat_red_packet">
+
+            <com.fuzamei.common.widget.IconView
+                android:id="@+id/tv_return"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/icon_back_left"
+                android:textColor="@color/chat_white"
+                android:textSize="17sp" />
+
+            <com.flyco.tablayout.SegmentTabLayout
+                android:id="@+id/stl_title"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                tl:tl_bar_color="@color/chat_red_packet"
+                tl:tl_indicator_color="@color/chat_red_packet_yellow"
+                tl:tl_indicator_corner_radius="18dp"
+                tl:tl_tab_padding="20dp"
+                tl:tl_textBold="BOTH"
+                tl:tl_textSelectColor="@color/chat_red_packet"
+                tl:tl_textsize="17sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_red_packet"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_time"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/chat_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.fuzamei.common.widget.IconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:gravity="center"
+                    android:text="@string/icon_back_right"
+                    android:textColor="@color/chat_white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_record_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/chat_white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_record_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/specialtext"
+                android:paddingTop="5dp"
+                android:paddingBottom="55dp"
+                android:text=""
+                android:textColor="@color/chat_white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include layout="@layout/red_packet_record_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

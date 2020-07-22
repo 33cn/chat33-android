@@ -1,0 +1,73 @@
+apply from: config
+apply from: versions
+apply from: flavor_config
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    productFlavors {
+        chat33 {
+            manifestPlaceholders = [
+                    HUAWEI_PUSH_ID: "",
+                    VIVO_PUSH_KEY : "",
+                    VIVO_PUSH_ID  : ""
+            ]
+        }
+        enc {
+            manifestPlaceholders = [
+                    HUAWEI_PUSH_ID: "",
+                    VIVO_PUSH_KEY : "",
+                    VIVO_PUSH_ID  : ""
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    developImplementation project(':chat-core')
+    productImplementation project(':chat-core')
+    developImplementation project(':lib-componentservice')
+    productImplementation project(':lib-componentservice')
+
+    // 友盟推送
+    api 'com.umeng.umsdk:common:1.5.4'
+    api 'com.umeng.umsdk:utdid:1.1.5.3'
+    api 'com.umeng.umsdk:push:6.0.1'
+    //小米Push通道
+    implementation 'com.umeng.umsdk:xiaomi-push:3.6.17'
+    implementation 'com.umeng.umsdk:xiaomi-umengaccs:1.1.0'
+    //华为Push通道
+    implementation 'com.umeng.umsdk:huawei-basetb:2.6.3.305'
+    implementation 'com.umeng.umsdk:huawei-pushtb:2.6.3.305'
+    implementation 'com.umeng.umsdk:huawei-umengaccs:1.2.1'
+    //魅族Push通道
+    implementation 'com.umeng.umsdk:meizu-push:3.8.1'
+    implementation 'com.umeng.umsdk:meizu-umengaccs:1.0.6'
+//    //oppo Push通道
+//    implementation 'com.umeng.umsdk:oppo-push:1.0.1'
+//    implementation 'com.umeng.umsdk:oppo-umengaccs:1.0.3'
+//    //vivo Push通道
+//    implementation 'com.umeng.umsdk:vivo-push:2.3.1'
+//    implementation 'com.umeng.umsdk:vivo-umengaccs:1.0.4'
+}

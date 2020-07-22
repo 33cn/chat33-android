@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_color_status_bg">
+
+    <com.fuzamei.common.widget.MultiStatusLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyLayout="@layout/layout_empty_friends_message"
+        app:errorLayout="@layout/basic_error"
+        app:loadingLayout="@layout/basic_loading"
+        app:netErrorLayout="@layout/basic_net_error"
+        app:targetViewId="@id/swipeLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+</RelativeLayout>

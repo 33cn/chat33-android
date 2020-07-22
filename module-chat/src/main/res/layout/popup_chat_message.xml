@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_thumb"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_reward"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_copy"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/revoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_revoke"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/forward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_forward"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/disable_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_action_member_operate2"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/enable_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_disable_mute"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/communication_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_speak_communication_mode"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/normal_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_speak_normal_mode"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_action_delete"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_action_share"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/multi_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_sl_btn"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="@string/chat_multi_select"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">Chat33Pro</string>
+
+    <string name="label_share">分享到Chat33Pro</string>
+
+    <string name="chat_tip_packet_share_title">【Chat33Pro】好友送你%1$s大红包</string>
+    <string name="chat_tip_packet_share_content">Chat33Pro是一款基于区块链技术的聊天应用，可发送比特元BTY等数字资产！</string>
+    <string name="chat_tips_share_title">好友邀请您加入区块链聊天——Chat33Pro</string>
+    <string name="chat_tips_share_content">Chat33Pro是一款基于区块链技术的聊天应用，可发送比特元BTY等数字资产！</string>
+</resources>

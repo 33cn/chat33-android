@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingRight="8dip"
+    android:paddingLeft="8dip"
+    android:gravity="center">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/toast_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/basic_white"
+        android:textSize="14sp"
+        android:text="@string/basic_topic" />
+ <!--   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selected1"
+        android:layout_above="@+id/toast_tv_title"
+        android:layout_alignLeft="@+id/toast_tv_title"
+        android:layout_alignRight="@+id/toast_tv_title"/>-->
+    
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/chat_send_selector"
+    android:layout_height="wrap_content">
+
+    <com.fzm.chat33.widget.ExpandQMUILinkTextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:minHeight="40dp"
+        android:paddingStart="15dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="15dp"
+        android:ellipsize="end"
+        android:paddingBottom="9dp"
+        android:textSize="16sp"
+        android:maxWidth="240dp"
+        android:layout_marginStart="5dp"
+        app:qmui_linkBackgroundColor="@color/app_color_link_gray"
+        app:qmui_linkTextColor="@color/app_color_link_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="这里是消息"/>
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:srcCompat="@drawable/ic_snap_lock"
+        app:layout_constraintTop_toTopOf="@id/tv_message"
+        app:layout_constraintEnd_toEndOf="@id/tv_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+include ':app', ':module-chat', ':chat-core', ':module-login'
+include ':lib-picverify', ':filepicker'
+include ':lib-basic', ':lib-componentservice', ':lib-update', ':lib-push'
+include ':picture_library', ':ucrop'

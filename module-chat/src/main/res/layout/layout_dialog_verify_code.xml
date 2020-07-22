@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/basic_shape_common_dialog_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/chat_input_phone_code"
+            android:textColor="@color/chat_text_grey_dark" />
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_close_dialog" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/code_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/chat_text_grey_dark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.fzm.chat33.widget.ChatCodeView
+            android:id="@+id/verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:input_count="4" />
+
+        <TextView
+            android:id="@+id/send_code"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/chat_send_code"
+            android:textColor="@color/chat_color_accent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_tips"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/chat_send_code_success_tip"
+        android:textColor="@color/chat_text_grey_light"
+        android:visibility="invisible" />
+</LinearLayout>

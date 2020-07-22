@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center">
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/toast_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="18dp"
+        android:text="@string/basic_topic"
+        android:textColor="@color/basic_white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

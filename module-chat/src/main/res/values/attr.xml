@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChatCodeView">
+        <attr name="input_count" format="integer" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_size" format="dimension|reference" />
+        <attr name="item_size" format="dimension|reference" />
+        <attr name="input_type" format="enum">
+            <enum name="number" value="1" />
+            <enum name="password" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardDivideView">
+        <attr name="divide_line_color" format="color" />
+        <attr name="port_shape_color" format="color" />
+        <attr name="port_shape_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ChatAvatarView">
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ChatSearchView">
+        <attr name="hint" format="string|reference" />
+        <attr name="maxWords" format="integer" />
+        <attr name="searchDelay" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="HighlightTextView">
+        <attr name="highlightColor" format="color" />
+    </declare-styleable>
+
+</resources>

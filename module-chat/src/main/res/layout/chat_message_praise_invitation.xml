@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_item"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/chat_invite_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/chat_invite_other_add_room"
+            android:textColor="@color/chat_text_grey_dark"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.fzm.chat33.widget.ChatAvatarView
+            android:id="@+id/iv_group_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/default_avatar_room"
+            app:iconSize="15dp"
+            app:layout_constraintLeft_toLeftOf="@id/chat_invite_icon"
+            app:layout_constraintTop_toBottomOf="@id/chat_invite_icon" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/chat_text_grey_dark"
+            app:layout_constraintLeft_toRightOf="@id/iv_group_avatar"
+            app:layout_constraintTop_toTopOf="@id/iv_group_avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="呱呱TSC" />
+
+        <TextView
+            android:id="@+id/tv_group_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/chat_text_grey_light"
+            app:layout_constraintLeft_toRightOf="@id/iv_group_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_group_name"
+            tools:text="数字货币官方群" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

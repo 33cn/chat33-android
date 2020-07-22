@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_EAF6FF">#EAF6FF</color>
+    <color name="color_FCF3E2">#FCF3E2</color>
+    <color name="chat_room_bg_recorder_dialog">#B4000000</color>
+    <color name="bg_pull_header">#9f3aa2fe</color>
+
+    <color name="chat_white">#FFFFFF</color>
+    <color name="chat_black">#000000</color>
+    <color name="chat_grey_white">#E8F3FF</color>
+    <color name="chat_transparent">#00000000</color>
+    <color name="pop_bg">#7F000000</color>
+
+    <!--Chat33颜色-->
+    <color name="chat_color_line">#F1F4F6</color>
+    <color name="chat_color_status_bg">#FAFBFC</color>
+    <color name="chat_forward_divider_receive">#E6EAEE</color>
+    <color name="chat_forward_divider_send">#9FCAF5</color>
+
+    <color name="chat_room_gray">#FFC8D3DE</color>
+    <color name="chat_room_gray2">@color/chat_text_grey_light</color>
+
+    <color name="chat_color_primary_mask">#32FAFBFC</color>
+    <color name="chat_color_primary">#FAFBFC</color>
+    <color name="chat_color_blue_dark">#3BA6E2</color>
+    <color name="chat_color_title">#0D73AD</color>
+    <color name="chat_color_accent">#32B2F7</color>
+    <color name="chat_color_accent_light">#C1E9FF</color>
+    <color name="chat_link_bg">@color/chat_color_accent</color>
+    <color name="chat_color_yellow">#ECD13C</color>
+    <color name="chat_red_packet_remark">#FBDA30</color>
+    <color name="chat_red_packet_yellow">#FFDF5F</color>
+    <color name="chat_text_grey_dark">#24374E</color>
+    <color name="chat_text_grey_light">#8A97A5</color>
+    <color name="chat_image_placeholder">#D8D8D8</color>
+    <color name="chat_chat_tips">#DD5F5F</color>
+    <color name="chat_red_bag_disable">#F2A4A4</color>
+    <color name="chat_red_bag_open">#F4DEB8</color>
+    <color name="chat_red_packet">#E14D5C</color>
+    <color name="chat_color_blue">#61C7FF</color>
+    <color name="chat_snap_orange">#EF883E</color>
+    <color name="chat_red_btn_pressed">#E2616E</color>
+    <color name="chat_red_btn_disable">#EEC7CA</color>
+    <color name="chat_red_text_light">#FFC3C9</color>
+    <color name="chat_red_text_error">#CF4646</color>
+    <color name="chat_half_white">#80FFFFFF</color>
+    <color name="chat_reward_orange">#EFA019</color>
+    <color name="chat_orange_pressed">#F1AE3D</color>
+    <color name="chat_orange_disable">#EFD3A4</color>
+
+    <!--<color name="chat_title_grey">#8A97A5</color>-->
+    <!--<color name="chat_title_grey_pressed">#2b333d</color>-->
+    <color name="chat_color_bg">#FAFBFC</color>
+    <color name="chat_color_bg_pressed">#DCDCDC</color>
+    <color name="chat_divide">#D3DFE6</color>
+    <color name="chat_divide_light">#E6EAEE</color>
+    <color name="chat_wechat_green">#3CB035</color>
+
+    <color name="chat_primary_icon_font">#c8d3de</color>
+
+    <!--scan-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!--widget-->
+    <color name="chat_widget">#333333</color>
+</resources>

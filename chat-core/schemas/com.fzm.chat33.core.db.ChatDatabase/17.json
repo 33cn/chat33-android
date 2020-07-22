@@ -1,0 +1,2129 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 17,
+    "identityHash": "fa9583ac17154ae86e979e4af2d56888",
+    "entities": [
+      {
+        "tableName": "chat_message",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`logId` TEXT NOT NULL, `msgId` TEXT, `encrypted` INTEGER NOT NULL, `isSnap` INTEGER NOT NULL, `snapVisible` INTEGER NOT NULL, `snapCounting` INTEGER NOT NULL, `destroyTime` INTEGER NOT NULL, `ignoreInHistory` INTEGER NOT NULL, `channelType` INTEGER NOT NULL, `senderId` TEXT, `fromGId` TEXT, `receiveId` TEXT, `messageState` INTEGER NOT NULL, `msgType` INTEGER NOT NULL, `sendTime` INTEGER NOT NULL, `imageUrl` TEXT, `mediaUrl` TEXT, `isRead` INTEGER, `name` TEXT, `localPath` TEXT, `duration` REAL, `height` INTEGER, `width` INTEGER, `type` INTEGER, `roomName` TEXT, `operator` TEXT, `target` TEXT, `owner` TEXT, `names` TEXT, `mutedType` INTEGER, `opt` INTEGER, `delete_logId` TEXT, `roomId` TEXT, `markId` TEXT, `inviterId` TEXT, `roomAvatar` TEXT, `identificationInfo` TEXT, `matchOffsets` TEXT, `content` TEXT, `kid` TEXT, `encryptedMsg` TEXT, `fromKey` TEXT, `toKey` TEXT, `recordId` TEXT, `amount` TEXT, `coin` INTEGER, `coinName` TEXT, `packetId` TEXT, `packetUrl` TEXT, `packetType` INTEGER, `redBagRemark` TEXT, `isOpened` INTEGER, `redPacketStatus` INTEGER, `aitList` TEXT, `fileUrl` TEXT, `fileName` TEXT, `fileSize` INTEGER, `md5` TEXT, `sourceChannel` INTEGER, `forwardType` INTEGER, `sourceName` TEXT, `forwardUserName` TEXT, `sourceLog` TEXT, `avatar` TEXT, `nickname` TEXT, `remark` TEXT, `uid` TEXT, `userLevel` INTEGER, PRIMARY KEY(`logId`, `channelType`))",
+        "fields": [
+          {
+            "fieldPath": "logId",
+            "columnName": "logId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msgId",
+            "columnName": "msgId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "encrypted",
+            "columnName": "encrypted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSnap",
+            "columnName": "isSnap",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "snapVisible",
+            "columnName": "snapVisible",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "snapCounting",
+            "columnName": "snapCounting",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destroyTime",
+            "columnName": "destroyTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ignoreInHistory",
+            "columnName": "ignoreInHistory",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "channelType",
+            "columnName": "channelType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "senderId",
+            "columnName": "senderId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fromGId",
+            "columnName": "fromGId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "receiveId",
+            "columnName": "receiveId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "messageState",
+            "columnName": "messageState",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msgType",
+            "columnName": "msgType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sendTime",
+            "columnName": "sendTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msg.imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.mediaUrl",
+            "columnName": "mediaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.isRead",
+            "columnName": "isRead",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.localPath",
+            "columnName": "localPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.duration",
+            "columnName": "duration",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.width",
+            "columnName": "width",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.roomName",
+            "columnName": "roomName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.operator",
+            "columnName": "operator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.target",
+            "columnName": "target",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.owner",
+            "columnName": "owner",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.names",
+            "columnName": "names",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.mutedType",
+            "columnName": "mutedType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.opt",
+            "columnName": "opt",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.logId",
+            "columnName": "delete_logId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.roomId",
+            "columnName": "roomId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.markId",
+            "columnName": "markId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.inviterId",
+            "columnName": "inviterId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.avatar",
+            "columnName": "roomAvatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.matchOffsets",
+            "columnName": "matchOffsets",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.kid",
+            "columnName": "kid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.encryptedMsg",
+            "columnName": "encryptedMsg",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fromKey",
+            "columnName": "fromKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.toKey",
+            "columnName": "toKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.recordId",
+            "columnName": "recordId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.amount",
+            "columnName": "amount",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.coin",
+            "columnName": "coin",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.coinName",
+            "columnName": "coinName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetId",
+            "columnName": "packetId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetUrl",
+            "columnName": "packetUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetType",
+            "columnName": "packetType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.redBagRemark",
+            "columnName": "redBagRemark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.isOpened",
+            "columnName": "isOpened",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.redPacketStatus",
+            "columnName": "redPacketStatus",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.aitList",
+            "columnName": "aitList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileUrl",
+            "columnName": "fileUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileName",
+            "columnName": "fileName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileSize",
+            "columnName": "fileSize",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.md5",
+            "columnName": "md5",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceChannel",
+            "columnName": "sourceChannel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.forwardType",
+            "columnName": "forwardType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceName",
+            "columnName": "sourceName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.forwardUserName",
+            "columnName": "forwardUserName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceLog",
+            "columnName": "sourceLog",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.userLevel",
+            "columnName": "userLevel",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "logId",
+            "channelType"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "info_cache",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`channelType` INTEGER NOT NULL, `id` TEXT NOT NULL, `nickname` TEXT, `avatar` TEXT, `remark` TEXT, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, PRIMARY KEY(`id`, `channelType`))",
+        "fields": [
+          {
+            "fieldPath": "channelType",
+            "columnName": "channelType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id",
+            "channelType"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "recent_message",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `depositAddress` TEXT, `number` INTEGER NOT NULL, `isDeleted` INTEGER NOT NULL, `stickyTop` INTEGER NOT NULL, `noDisturb` INTEGER NOT NULL, `encrypt` INTEGER NOT NULL, `beAit` INTEGER NOT NULL, `disableDeadline` INTEGER NOT NULL, `logId` TEXT, `channelType` INTEGER NOT NULL, `fromId` TEXT, `targetId` TEXT, `msgType` INTEGER NOT NULL, `isSnap` INTEGER NOT NULL, `datetime` INTEGER NOT NULL, `imageUrl` TEXT, `mediaUrl` TEXT, `isRead` INTEGER, `name` TEXT, `localPath` TEXT, `duration` REAL, `height` INTEGER, `width` INTEGER, `type` INTEGER, `roomName` TEXT, `operator` TEXT, `target` TEXT, `owner` TEXT, `names` TEXT, `mutedType` INTEGER, `opt` INTEGER, `delete_logId` TEXT, `roomId` TEXT, `markId` TEXT, `inviterId` TEXT, `roomAvatar` TEXT, `identificationInfo` TEXT, `matchOffsets` TEXT, `content` TEXT, `kid` TEXT, `encryptedMsg` TEXT, `fromKey` TEXT, `toKey` TEXT, `recordId` TEXT, `amount` TEXT, `coin` INTEGER, `coinName` TEXT, `packetId` TEXT, `packetUrl` TEXT, `packetType` INTEGER, `redBagRemark` TEXT, `isOpened` INTEGER, `redPacketStatus` INTEGER, `aitList` TEXT, `fileUrl` TEXT, `fileName` TEXT, `fileSize` INTEGER, `md5` TEXT, `sourceChannel` INTEGER, `forwardType` INTEGER, `sourceName` TEXT, `forwardUserName` TEXT, `sourceLog` TEXT, `avatar` TEXT, `nickname` TEXT, `remark` TEXT, `uid` TEXT, `userLevel` INTEGER, PRIMARY KEY(`channelType`, `id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositAddress",
+            "columnName": "depositAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDeleted",
+            "columnName": "isDeleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stickyTop",
+            "columnName": "stickyTop",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "noDisturb",
+            "columnName": "noDisturb",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "encrypt",
+            "columnName": "encrypt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "beAit",
+            "columnName": "beAit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disableDeadline",
+            "columnName": "disableDeadline",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLog.logId",
+            "columnName": "logId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.channelType",
+            "columnName": "channelType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLog.fromId",
+            "columnName": "fromId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.targetId",
+            "columnName": "targetId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msgType",
+            "columnName": "msgType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLog.isSnap",
+            "columnName": "isSnap",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLog.datetime",
+            "columnName": "datetime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLog.msg.imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.mediaUrl",
+            "columnName": "mediaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.isRead",
+            "columnName": "isRead",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.localPath",
+            "columnName": "localPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.duration",
+            "columnName": "duration",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.width",
+            "columnName": "width",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.roomName",
+            "columnName": "roomName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.operator",
+            "columnName": "operator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.target",
+            "columnName": "target",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.owner",
+            "columnName": "owner",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.names",
+            "columnName": "names",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.mutedType",
+            "columnName": "mutedType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.opt",
+            "columnName": "opt",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.logId",
+            "columnName": "delete_logId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.roomId",
+            "columnName": "roomId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.markId",
+            "columnName": "markId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.inviterId",
+            "columnName": "inviterId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.avatar",
+            "columnName": "roomAvatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.matchOffsets",
+            "columnName": "matchOffsets",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.kid",
+            "columnName": "kid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.encryptedMsg",
+            "columnName": "encryptedMsg",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.fromKey",
+            "columnName": "fromKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.toKey",
+            "columnName": "toKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.recordId",
+            "columnName": "recordId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.amount",
+            "columnName": "amount",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.coin",
+            "columnName": "coin",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.coinName",
+            "columnName": "coinName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.packetId",
+            "columnName": "packetId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.packetUrl",
+            "columnName": "packetUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.packetType",
+            "columnName": "packetType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.redBagRemark",
+            "columnName": "redBagRemark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.isOpened",
+            "columnName": "isOpened",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.redPacketStatus",
+            "columnName": "redPacketStatus",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.aitList",
+            "columnName": "aitList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.fileUrl",
+            "columnName": "fileUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.fileName",
+            "columnName": "fileName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.fileSize",
+            "columnName": "fileSize",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.md5",
+            "columnName": "md5",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.sourceChannel",
+            "columnName": "sourceChannel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.forwardType",
+            "columnName": "forwardType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.sourceName",
+            "columnName": "sourceName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.forwardUserName",
+            "columnName": "forwardUserName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.msg.sourceLog",
+            "columnName": "sourceLog",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.senderInfo.avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.senderInfo.nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.senderInfo.remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.senderInfo.uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastLog.senderInfo.userLevel",
+            "columnName": "userLevel",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "channelType",
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "friends",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT, `sex` TEXT, `avatar` TEXT, `position` TEXT, `needConfirm` INTEGER NOT NULL, `needAnswer` INTEGER NOT NULL, `question` TEXT, `noDisturbing` INTEGER NOT NULL, `onTop` INTEGER NOT NULL, `encrypt` INTEGER NOT NULL, `addTime` INTEGER NOT NULL, `remark` TEXT, `source` TEXT, `isDelete` INTEGER NOT NULL, `isBlocked` INTEGER NOT NULL, `isFriend` INTEGER NOT NULL, `mark_id` TEXT, `commonlyUsed` INTEGER NOT NULL, `depositAddress` TEXT, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, `publicKey` TEXT, `extRemark` TEXT, `com_id` TEXT, `uid` TEXT, `account` TEXT, `username` TEXT, `phone` TEXT, `email` TEXT, `verified` INTEGER NOT NULL, `user_level` TEXT, `description` TEXT, `searchKey` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sex",
+            "columnName": "sex",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "needConfirm",
+            "columnName": "needConfirm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "needAnswer",
+            "columnName": "needAnswer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "question",
+            "columnName": "question",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noDisturbing",
+            "columnName": "noDisturbing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onTop",
+            "columnName": "onTop",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "encrypt",
+            "columnName": "encrypt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "addTime",
+            "columnName": "addTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "source",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isDelete",
+            "columnName": "isDelete",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBlocked",
+            "columnName": "isBlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFriend",
+            "columnName": "isFriend",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mark_id",
+            "columnName": "mark_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "commonlyUsed",
+            "columnName": "commonlyUsed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositAddress",
+            "columnName": "depositAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "publicKey",
+            "columnName": "publicKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "extRemark",
+            "columnName": "extRemark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "com_id",
+            "columnName": "com_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "account",
+            "columnName": "account",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "username",
+            "columnName": "username",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "verified",
+            "columnName": "verified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "user_level",
+            "columnName": "user_level",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "searchKey",
+            "columnName": "searchKey",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "room_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT, `avatar` TEXT, `noDisturbing` INTEGER NOT NULL, `commonlyUsed` INTEGER NOT NULL, `onTop` INTEGER NOT NULL, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, `encrypt` INTEGER NOT NULL, `disableDeadline` INTEGER NOT NULL, `searchKey` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noDisturbing",
+            "columnName": "noDisturbing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "commonlyUsed",
+            "columnName": "commonlyUsed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onTop",
+            "columnName": "onTop",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "encrypt",
+            "columnName": "encrypt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disableDeadline",
+            "columnName": "disableDeadline",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "searchKey",
+            "columnName": "searchKey",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "room_info",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `markId` TEXT, `name` TEXT, `avatar` TEXT, `isMember` INTEGER NOT NULL, `onlineNumber` INTEGER NOT NULL, `memberNumber` INTEGER NOT NULL, `recordPermission` INTEGER NOT NULL, `noDisturbing` INTEGER NOT NULL, `onTop` INTEGER NOT NULL, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, `encrypt` INTEGER NOT NULL, `memberLevel` INTEGER NOT NULL, `canAddFriend` INTEGER NOT NULL, `joinPermission` INTEGER NOT NULL, `roomNickname` TEXT, `managerNumber` INTEGER NOT NULL, `mutedNumber` INTEGER NOT NULL, `roomMutedType` INTEGER NOT NULL, `mutedType` INTEGER NOT NULL, `deadline` INTEGER NOT NULL, `disableDeadline` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "markId",
+            "columnName": "markId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isMember",
+            "columnName": "isMember",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onlineNumber",
+            "columnName": "onlineNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memberNumber",
+            "columnName": "memberNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordPermission",
+            "columnName": "recordPermission",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "noDisturbing",
+            "columnName": "noDisturbing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onTop",
+            "columnName": "onTop",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "encrypt",
+            "columnName": "encrypt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memberLevel",
+            "columnName": "memberLevel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canAddFriend",
+            "columnName": "canAddFriend",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "joinPermission",
+            "columnName": "joinPermission",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roomNickname",
+            "columnName": "roomNickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "managerNumber",
+            "columnName": "managerNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mutedNumber",
+            "columnName": "mutedNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roomMutedType",
+            "columnName": "roomMutedType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mutedType",
+            "columnName": "mutedType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deadline",
+            "columnName": "deadline",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disableDeadline",
+            "columnName": "disableDeadline",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "room_user",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`roomId` TEXT NOT NULL, `id` TEXT NOT NULL, `nickname` TEXT, `roomNickname` TEXT, `avatar` TEXT, `memberLevel` INTEGER NOT NULL, `roomMutedType` INTEGER NOT NULL, `mutedType` INTEGER NOT NULL, `deadline` INTEGER NOT NULL, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, `publicKey` TEXT, `searchKey` TEXT, PRIMARY KEY(`roomId`, `id`), FOREIGN KEY(`roomId`) REFERENCES `room_list`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "roomId",
+            "columnName": "roomId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roomNickname",
+            "columnName": "roomNickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memberLevel",
+            "columnName": "memberLevel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roomMutedType",
+            "columnName": "roomMutedType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mutedType",
+            "columnName": "mutedType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deadline",
+            "columnName": "deadline",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "publicKey",
+            "columnName": "publicKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "searchKey",
+            "columnName": "searchKey",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "roomId",
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "room_list",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "roomId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "room_key",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`roomId` TEXT NOT NULL, `kid` TEXT NOT NULL, `key` TEXT, `originKey` TEXT, `fromKey` TEXT, PRIMARY KEY(`roomId`, `kid`))",
+        "fields": [
+          {
+            "fieldPath": "roomId",
+            "columnName": "roomId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kid",
+            "columnName": "kid",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "originKey",
+            "columnName": "originKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fromKey",
+            "columnName": "fromKey",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "roomId",
+            "kid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "user_info",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`account` TEXT, `avatar` TEXT, `id` TEXT NOT NULL, `uid` TEXT, `phone` TEXT, `isSetPayPwd` INTEGER NOT NULL, `user_level` INTEGER NOT NULL, `username` TEXT, `verified` INTEGER NOT NULL, `token` TEXT, `position` TEXT, `firstLogin` INTEGER NOT NULL, `depositAddress` TEXT, `publicKey` TEXT, `identification` INTEGER NOT NULL, `identificationInfo` TEXT, `code` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "account",
+            "columnName": "account",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isSetPayPwd",
+            "columnName": "isSetPayPwd",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "user_level",
+            "columnName": "user_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "username",
+            "columnName": "username",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "verified",
+            "columnName": "verified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "token",
+            "columnName": "token",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstLogin",
+            "columnName": "firstLogin",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositAddress",
+            "columnName": "depositAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "publicKey",
+            "columnName": "publicKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "identification",
+            "columnName": "identification",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "code",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "search_history",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`keywords` TEXT NOT NULL, `searchTime` INTEGER NOT NULL, PRIMARY KEY(`keywords`))",
+        "fields": [
+          {
+            "fieldPath": "keywords",
+            "columnName": "keywords",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "searchTime",
+            "columnName": "searchTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "keywords"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "ftsVersion": "FTS4",
+        "ftsOptions": {
+          "tokenizer": "mmicu",
+          "tokenizerArgs": [],
+          "contentTable": "chat_message",
+          "languageIdColumnName": "",
+          "matchInfo": "FTS4",
+          "notIndexedColumns": [
+            "snapVisible",
+            "snapCounting",
+            "destroyTime",
+            "imageUrl",
+            "mediaUrl",
+            "localPath",
+            "height",
+            "width",
+            "roomAvatar",
+            "encryptedMsg",
+            "recordId",
+            "coinName",
+            "packetId",
+            "packetUrl",
+            "fileUrl",
+            "fileSize",
+            "md5"
+          ],
+          "prefixSizes": [],
+          "preferredOrder": "DESC"
+        },
+        "contentSyncTriggers": [
+          "CREATE TRIGGER IF NOT EXISTS room_fts_content_sync_message_fts_BEFORE_UPDATE BEFORE UPDATE ON `chat_message` BEGIN DELETE FROM `message_fts` WHERE `docid`=OLD.`rowid`; END",
+          "CREATE TRIGGER IF NOT EXISTS room_fts_content_sync_message_fts_BEFORE_DELETE BEFORE DELETE ON `chat_message` BEGIN DELETE FROM `message_fts` WHERE `docid`=OLD.`rowid`; END",
+          "CREATE TRIGGER IF NOT EXISTS room_fts_content_sync_message_fts_AFTER_UPDATE AFTER UPDATE ON `chat_message` BEGIN INSERT INTO `message_fts`(`docid`, `logId`, `msgId`, `encrypted`, `isSnap`, `snapVisible`, `snapCounting`, `destroyTime`, `ignoreInHistory`, `channelType`, `senderId`, `fromGId`, `receiveId`, `messageState`, `msgType`, `sendTime`, `imageUrl`, `mediaUrl`, `isRead`, `name`, `localPath`, `duration`, `height`, `width`, `type`, `roomName`, `operator`, `target`, `owner`, `names`, `mutedType`, `opt`, `delete_logId`, `roomId`, `markId`, `inviterId`, `roomAvatar`, `identificationInfo`, `matchOffsets`, `content`, `kid`, `encryptedMsg`, `fromKey`, `toKey`, `recordId`, `amount`, `coin`, `coinName`, `packetId`, `packetUrl`, `packetType`, `redBagRemark`, `isOpened`, `redPacketStatus`, `aitList`, `fileUrl`, `fileName`, `fileSize`, `md5`, `sourceChannel`, `forwardType`, `sourceName`, `forwardUserName`, `sourceLog`, `avatar`, `nickname`, `remark`, `uid`, `userLevel`) VALUES (NEW.`rowid`, NEW.`logId`, NEW.`msgId`, NEW.`encrypted`, NEW.`isSnap`, NEW.`snapVisible`, NEW.`snapCounting`, NEW.`destroyTime`, NEW.`ignoreInHistory`, NEW.`channelType`, NEW.`senderId`, NEW.`fromGId`, NEW.`receiveId`, NEW.`messageState`, NEW.`msgType`, NEW.`sendTime`, NEW.`imageUrl`, NEW.`mediaUrl`, NEW.`isRead`, NEW.`name`, NEW.`localPath`, NEW.`duration`, NEW.`height`, NEW.`width`, NEW.`type`, NEW.`roomName`, NEW.`operator`, NEW.`target`, NEW.`owner`, NEW.`names`, NEW.`mutedType`, NEW.`opt`, NEW.`delete_logId`, NEW.`roomId`, NEW.`markId`, NEW.`inviterId`, NEW.`roomAvatar`, NEW.`identificationInfo`, NEW.`matchOffsets`, NEW.`content`, NEW.`kid`, NEW.`encryptedMsg`, NEW.`fromKey`, NEW.`toKey`, NEW.`recordId`, NEW.`amount`, NEW.`coin`, NEW.`coinName`, NEW.`packetId`, NEW.`packetUrl`, NEW.`packetType`, NEW.`redBagRemark`, NEW.`isOpened`, NEW.`redPacketStatus`, NEW.`aitList`, NEW.`fileUrl`, NEW.`fileName`, NEW.`fileSize`, NEW.`md5`, NEW.`sourceChannel`, NEW.`forwardType`, NEW.`sourceName`, NEW.`forwardUserName`, NEW.`sourceLog`, NEW.`avatar`, NEW.`nickname`, NEW.`remark`, NEW.`uid`, NEW.`userLevel`); END",
+          "CREATE TRIGGER IF NOT EXISTS room_fts_content_sync_message_fts_AFTER_INSERT AFTER INSERT ON `chat_message` BEGIN INSERT INTO `message_fts`(`docid`, `logId`, `msgId`, `encrypted`, `isSnap`, `snapVisible`, `snapCounting`, `destroyTime`, `ignoreInHistory`, `channelType`, `senderId`, `fromGId`, `receiveId`, `messageState`, `msgType`, `sendTime`, `imageUrl`, `mediaUrl`, `isRead`, `name`, `localPath`, `duration`, `height`, `width`, `type`, `roomName`, `operator`, `target`, `owner`, `names`, `mutedType`, `opt`, `delete_logId`, `roomId`, `markId`, `inviterId`, `roomAvatar`, `identificationInfo`, `matchOffsets`, `content`, `kid`, `encryptedMsg`, `fromKey`, `toKey`, `recordId`, `amount`, `coin`, `coinName`, `packetId`, `packetUrl`, `packetType`, `redBagRemark`, `isOpened`, `redPacketStatus`, `aitList`, `fileUrl`, `fileName`, `fileSize`, `md5`, `sourceChannel`, `forwardType`, `sourceName`, `forwardUserName`, `sourceLog`, `avatar`, `nickname`, `remark`, `uid`, `userLevel`) VALUES (NEW.`rowid`, NEW.`logId`, NEW.`msgId`, NEW.`encrypted`, NEW.`isSnap`, NEW.`snapVisible`, NEW.`snapCounting`, NEW.`destroyTime`, NEW.`ignoreInHistory`, NEW.`channelType`, NEW.`senderId`, NEW.`fromGId`, NEW.`receiveId`, NEW.`messageState`, NEW.`msgType`, NEW.`sendTime`, NEW.`imageUrl`, NEW.`mediaUrl`, NEW.`isRead`, NEW.`name`, NEW.`localPath`, NEW.`duration`, NEW.`height`, NEW.`width`, NEW.`type`, NEW.`roomName`, NEW.`operator`, NEW.`target`, NEW.`owner`, NEW.`names`, NEW.`mutedType`, NEW.`opt`, NEW.`delete_logId`, NEW.`roomId`, NEW.`markId`, NEW.`inviterId`, NEW.`roomAvatar`, NEW.`identificationInfo`, NEW.`matchOffsets`, NEW.`content`, NEW.`kid`, NEW.`encryptedMsg`, NEW.`fromKey`, NEW.`toKey`, NEW.`recordId`, NEW.`amount`, NEW.`coin`, NEW.`coinName`, NEW.`packetId`, NEW.`packetUrl`, NEW.`packetType`, NEW.`redBagRemark`, NEW.`isOpened`, NEW.`redPacketStatus`, NEW.`aitList`, NEW.`fileUrl`, NEW.`fileName`, NEW.`fileSize`, NEW.`md5`, NEW.`sourceChannel`, NEW.`forwardType`, NEW.`sourceName`, NEW.`forwardUserName`, NEW.`sourceLog`, NEW.`avatar`, NEW.`nickname`, NEW.`remark`, NEW.`uid`, NEW.`userLevel`); END"
+        ],
+        "tableName": "message_fts",
+        "createSql": "CREATE VIRTUAL TABLE IF NOT EXISTS `${TABLE_NAME}` USING FTS4(`logId` TEXT NOT NULL, `msgId` TEXT, `encrypted` INTEGER NOT NULL, `isSnap` INTEGER NOT NULL, `snapVisible` INTEGER NOT NULL, `snapCounting` INTEGER NOT NULL, `destroyTime` INTEGER NOT NULL, `ignoreInHistory` INTEGER NOT NULL, `channelType` INTEGER NOT NULL, `senderId` TEXT, `fromGId` TEXT, `receiveId` TEXT, `messageState` INTEGER NOT NULL, `msgType` INTEGER NOT NULL, `sendTime` INTEGER NOT NULL, `imageUrl` TEXT, `mediaUrl` TEXT, `isRead` INTEGER, `name` TEXT, `localPath` TEXT, `duration` REAL, `height` INTEGER, `width` INTEGER, `type` INTEGER, `roomName` TEXT, `operator` TEXT, `target` TEXT, `owner` TEXT, `names` TEXT, `mutedType` INTEGER, `opt` INTEGER, `delete_logId` TEXT, `roomId` TEXT, `markId` TEXT, `inviterId` TEXT, `roomAvatar` TEXT, `identificationInfo` TEXT, `matchOffsets` TEXT, `content` TEXT, `kid` TEXT, `encryptedMsg` TEXT, `fromKey` TEXT, `toKey` TEXT, `recordId` TEXT, `amount` TEXT, `coin` INTEGER, `coinName` TEXT, `packetId` TEXT, `packetUrl` TEXT, `packetType` INTEGER, `redBagRemark` TEXT, `isOpened` INTEGER, `redPacketStatus` INTEGER, `aitList` TEXT, `fileUrl` TEXT, `fileName` TEXT, `fileSize` INTEGER, `md5` TEXT, `sourceChannel` INTEGER, `forwardType` INTEGER, `sourceName` TEXT, `forwardUserName` TEXT, `sourceLog` TEXT, `avatar` TEXT, `nickname` TEXT, `remark` TEXT, `uid` TEXT, `userLevel` INTEGER, tokenize=mmicu, content=`chat_message`, notindexed=`snapVisible`, notindexed=`snapCounting`, notindexed=`destroyTime`, notindexed=`imageUrl`, notindexed=`mediaUrl`, notindexed=`localPath`, notindexed=`height`, notindexed=`width`, notindexed=`roomAvatar`, notindexed=`encryptedMsg`, notindexed=`recordId`, notindexed=`coinName`, notindexed=`packetId`, notindexed=`packetUrl`, notindexed=`fileUrl`, notindexed=`fileSize`, notindexed=`md5`, order=DESC)",
+        "fields": [
+          {
+            "fieldPath": "logId",
+            "columnName": "logId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msgId",
+            "columnName": "msgId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "encrypted",
+            "columnName": "encrypted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSnap",
+            "columnName": "isSnap",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "snapVisible",
+            "columnName": "snapVisible",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "snapCounting",
+            "columnName": "snapCounting",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destroyTime",
+            "columnName": "destroyTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ignoreInHistory",
+            "columnName": "ignoreInHistory",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "channelType",
+            "columnName": "channelType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "senderId",
+            "columnName": "senderId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fromGId",
+            "columnName": "fromGId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "receiveId",
+            "columnName": "receiveId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "messageState",
+            "columnName": "messageState",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msgType",
+            "columnName": "msgType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sendTime",
+            "columnName": "sendTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "msg.imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.mediaUrl",
+            "columnName": "mediaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.isRead",
+            "columnName": "isRead",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.localPath",
+            "columnName": "localPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.duration",
+            "columnName": "duration",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.width",
+            "columnName": "width",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.roomName",
+            "columnName": "roomName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.operator",
+            "columnName": "operator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.target",
+            "columnName": "target",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.owner",
+            "columnName": "owner",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.names",
+            "columnName": "names",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.mutedType",
+            "columnName": "mutedType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.opt",
+            "columnName": "opt",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.logId",
+            "columnName": "delete_logId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.roomId",
+            "columnName": "roomId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.markId",
+            "columnName": "markId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.inviterId",
+            "columnName": "inviterId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.avatar",
+            "columnName": "roomAvatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.identificationInfo",
+            "columnName": "identificationInfo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.matchOffsets",
+            "columnName": "matchOffsets",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.kid",
+            "columnName": "kid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.encryptedMsg",
+            "columnName": "encryptedMsg",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fromKey",
+            "columnName": "fromKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.toKey",
+            "columnName": "toKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.recordId",
+            "columnName": "recordId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.amount",
+            "columnName": "amount",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.coin",
+            "columnName": "coin",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.coinName",
+            "columnName": "coinName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetId",
+            "columnName": "packetId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetUrl",
+            "columnName": "packetUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.packetType",
+            "columnName": "packetType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.redBagRemark",
+            "columnName": "redBagRemark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.isOpened",
+            "columnName": "isOpened",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.redPacketStatus",
+            "columnName": "redPacketStatus",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.aitList",
+            "columnName": "aitList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileUrl",
+            "columnName": "fileUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileName",
+            "columnName": "fileName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.fileSize",
+            "columnName": "fileSize",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.md5",
+            "columnName": "md5",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceChannel",
+            "columnName": "sourceChannel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.forwardType",
+            "columnName": "forwardType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceName",
+            "columnName": "sourceName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.forwardUserName",
+            "columnName": "forwardUserName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "msg.sourceLog",
+            "columnName": "sourceLog",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "senderInfo.userLevel",
+            "columnName": "userLevel",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [
+      {
+        "viewName": "FriendView",
+        "createSql": "CREATE VIEW `${VIEW_NAME}` AS SELECT info_cache.id, info_cache.nickname AS name, info_cache.remark, info_cache.avatar, info_cache.identification, 2 AS onTop, 2 AS noDisturbing FROM info_cache WHERE channelType = 3 UNION SELECT friends.id, friends.name, friends.remark, friends.avatar, friends.identification, friends.onTop, friends.noDisturbing FROM friends"
+      },
+      {
+        "viewName": "RoomView",
+        "createSql": "CREATE VIEW `${VIEW_NAME}` AS SELECT info_cache.id, info_cache.nickname AS name, info_cache.remark, info_cache.avatar, info_cache.identification, 2 AS onTop, 2 AS noDisturbing FROM info_cache WHERE channelType = 2 UNION SELECT room_list.id, room_list.name, room_list.name AS remark, room_list.avatar, room_list.identification, room_list.onTop, room_list.noDisturbing  FROM room_list"
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fa9583ac17154ae86e979e4af2d56888')"
+    ]
+  }
+}

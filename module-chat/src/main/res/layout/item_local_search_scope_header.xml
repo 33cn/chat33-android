@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_scope"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginStart="15dp"
+    android:ellipsize="middle"
+    android:gravity="start|center_vertical"
+    android:singleLine="true"
+    android:text="@string/chat_tips_search_history"
+    android:textColor="@color/chat_text_grey_light" />

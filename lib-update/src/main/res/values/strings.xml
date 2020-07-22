@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">update</string>
+    <string name="update_downloading">下载中...</string>
+    <string name="update_begin_download">准备下载...</string>
+    <string name="update_error_request">请求失败，请稍后再试</string>
+</resources>

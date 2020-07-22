@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/chat_send_selector"
+    android:layout_height="wrap_content">
+
+    <com.fzm.chat33.widget.ExpandQMUILinkTextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:minHeight="40dp"
+        android:paddingStart="15dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="15dp"
+        android:ellipsize="end"
+        android:maxWidth="240dp"
+        android:paddingBottom="9dp"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"
+        app:qmui_linkBackgroundColor="@color/app_color_link_gray"
+        app:qmui_linkTextColor="@color/app_color_link_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="这里是消息"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

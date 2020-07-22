@@ -1,0 +1,150 @@
+apply from: versions
+if (isIndependent()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+def keystore = file("../sign/chat33.jks")
+def signProperties = file("../sign/sign.properties")
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+// ARouter + kotlin
+apply plugin: 'kotlin-kapt'
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+        arg("AROUTER_GENERATE_DOC", "enable")
+    }
+}
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+
+        versionCode version_code
+        versionName version_name
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        if ("${this.name}".contains("-")) {
+            resourcePrefix "${this.name}".substring("${this.name}".indexOf("-") + 1) + "_"
+        } else {
+            resourcePrefix "${this.name}_"
+        }
+//        resourcePrefix "${project.name}_"
+
+        if (isIndependent() && !this.name.startsWith("app")) {
+            applicationId "com.fzm.chat33." + "${this.name}".substring("${this.name}".indexOf("-") + 1)
+            println("this == ${this.name} , applicationId")
+        }
+
+        //arouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+
+        release {
+            if (keystore.exists() && signProperties.exists()) {
+                Properties props = new Properties()
+                props.load(new FileInputStream(signProperties))
+                keyAlias props['KEY_ALIAS']
+                keyPassword props['KEY_PASSWORD']
+                storeFile keystore
+                storePassword props['STORE_PASSWORD']
+            }
+
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            if (isIndependent()) {
+                minifyEnabled true
+                shrinkResources true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            } else {
+                minifyEnabled false
+                consumerProguardFiles 'proguard-rules.pro'
+            }
+        }
+    }
+
+
+
+    sourceSets {
+        main {
+            // 集成模式下
+            if (!is_debug && this.name.startsWith("module-")) {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java {
+                    //release 时 debug 目录下文件不需要合并到主工程
+                    exclude 'debug/**'
+                }
+
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+        }
+    }
+}
+
+/**
+ * 通过修改 project - build.gradle的 is_debug 值来控制module 是否可以独立编译
+ * @return true ：module 是 app ，is_debug = true 并且 *_module 结尾
+ */
+def isIndependent() {
+    //是app module ，独立编译
+    if (this.name.startsWith("app")) {
+        println("this module's name is not endsWith [module] , this.name = ${this.name}")
+        return true
+    }
+
+    //没有开启独立编译选项，所以为library
+    if (!is_debug) {
+        println("not independent!")
+        return false
+    }
+
+    //开启了独立编译选项，但是模块名称不是 module 结尾，所以为 library
+    if (!this.name.startsWith("module-") || this.name.startsWith("module-login")) {
+        println("this module's name is not endsWith [module] , this.name = ${this.name}")
+        return false
+    }
+    println("this module is independent!")
+    return true
+}
+
+ext {
+    isIndependent = this.&isIndependent
+}

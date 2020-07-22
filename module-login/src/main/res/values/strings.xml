@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">Chat33</string>
+
+    <string name="login_tips_login_success">登录成功</string>
+    <string name="login_tips_register_success">注册成功</string>
+    <string name="login_tips_code_sent">验证码发送成功</string>
+
+    <string name="login_tips_correct_phone">请输入正确的手机号</string>
+    <string name="login_tips_correct_code">请输入完整验证码</string>
+    <string name="login_tips_code_count">已发送(%1$ds)</string>
+
+    <string name="login_tips_input_phone">请输入手机号</string>
+    <string name="login_tips_input_code">请输入验证码</string>
+    <string name="login_action_send_code">获取验证码</string>
+    <string name="login_action_login">登录/注册</string>
+
+    <string name="login_tips_privacy_title">用户服务协议</string>
+    <string name="login_tip_agree_protocol">请先同意用户服务协议</string>
+    <string name="login_tip_read">已阅读</string>
+    <string name="login_tip_protocol">《Chat33用户服务协议》</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basic_colorPrimary">#3F51B5</color>
+    <color name="basic_colorPrimaryDark">#303F9F</color>
+    <color name="basic_colorAccent">#FF4081</color>
+
+
+    <color name="basic_white">#ffffff</color>
+
+    <!--暗的字体颜色-->
+    <color name="basic_dark_grey">#8a97a5</color>
+    <!--亮的字体颜色-->
+    <color name="basic_light_grey">#c8d3de</color>
+    <color name="basic_toast_error_bg">#7f2e2d</color>
+    <color name="basic_trans_70">#b2000000</color>
+    <color name="basic_transparent">#00000000</color>
+
+    <color name="basic_empty_bg">#2F343B</color>
+
+    <color name="basic_popup_bg">#262b31</color>
+    <color name="basic_popup_bg_checked">#20252B</color>
+
+    <color name="basic_wheel_picker_bg">#3A4048</color>
+    <color name="basic_wheel_picker_text">#9DA7B0</color>
+
+
+    <!--// new-->
+    <color name="basic_title_grey">#8A97A5</color>
+    <color name="basic_content_24374E">#24374E</color>
+    <color name="basic_color_bg">#FAFBFC</color>
+    <color name="basic_color_bg_pressed">#DCDCDC</color>
+    <color name="basic_divide_light">#D3DFE6</color>
+    <color name="basic_text_accent">#32B2F7</color>
+    <color name="basic_text_blue_light">#0D73AD</color>
+    <color name="basic_checkbos_disabled">#D8D8D8</color>
+
+</resources>

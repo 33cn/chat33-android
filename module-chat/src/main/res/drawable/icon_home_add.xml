@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="26dp"
+    android:height="26dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+    <path
+        android:fillColor="@color/chat_color_accent"
+        android:fillType="evenOdd"
+        android:pathData="M11,24L41,24A2,2 0,0 1,43 26L43,26A2,2 0,0 1,41 28L11,28A2,2 0,0 1,9 26L9,26A2,2 0,0 1,11 24z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="@color/chat_color_accent"
+        android:fillType="evenOdd"
+        android:pathData="M28,11L28,41A2,2 0,0 1,26 43L26,43A2,2 0,0 1,24 41L24,11A2,2 0,0 1,26 9L26,9A2,2 0,0 1,28 11z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+</vector>

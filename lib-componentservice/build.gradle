@@ -1,0 +1,29 @@
+apply from: config
+apply from: flavor_config
+
+android {
+
+    productFlavors {
+        develop {
+            buildConfigField "boolean", "DEVELOP", "true"
+        }
+        product {
+            buildConfigField "boolean", "DEVELOP", "false"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+
+    api project(':lib-basic')
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.6'
+
+    annotationProcessor arouterCompiler
+    kapt arouterCompiler
+}
+repositories {
+    mavenCentral()
+}

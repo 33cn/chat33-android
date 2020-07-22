@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_large_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_black"
+    android:fitsSystemWindows="true">
+
+    <com.fuzamei.common.widget.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/pb_snap_progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:indeterminateOnly="false"
+        android:max="30"
+        android:progress="30"
+        android:progressDrawable="@drawable/progressbar_snap_orange"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_orange_dot"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="10"
+        android:textColor="@color/chat_white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</FrameLayout>

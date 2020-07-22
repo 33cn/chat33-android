@@ -1,0 +1,27 @@
+apply from: config
+apply from: versions
+apply from: flavor_config
+
+android {
+
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    productFlavors {
+        develop {
+            buildConfigField "boolean", "DEVELOP", "true"
+        }
+        product {
+            buildConfigField "boolean", "DEVELOP", "false"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':lib-componentservice')
+    annotationProcessor arouterCompiler
+    kapt arouterCompiler
+}

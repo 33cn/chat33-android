@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/app_ic_selected" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/app_ic_selected_disable" android:state_checked="true" />
+    <item android:drawable="@drawable/app_ic_unselected" android:state_enabled="true" />
+    <item android:drawable="@drawable/app_ic_unselected_disable" />
+</selector>

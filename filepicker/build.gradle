@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply from: versions
+apply from: flavor_config
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    productFlavors {
+        develop {
+            buildConfigField "boolean", "DEVELOP", "true"
+        }
+        product {
+            buildConfigField "boolean", "DEVELOP", "false"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation adapter_helper
+    implementation luban
+
+    implementation project(':lib-componentservice')
+}

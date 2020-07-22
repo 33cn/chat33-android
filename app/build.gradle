@@ -1,0 +1,53 @@
+apply from: config
+apply from: flavor_config
+apply plugin: 'com.doraemon.compiler.plugin'
+
+android {
+    defaultConfig {
+        applicationId "com.fzm.chat33"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    productFlavors {
+        chat33 {
+            versionCode version_code
+            versionName version_name
+            applicationId 'com.fzm.chat33'
+        }
+        enc {
+            dimension "product"
+            versionCode enc_version_code
+            versionName enc_version_name
+            applicationId 'com.fzm.chat'
+        }
+        develop {
+            applicationIdSuffix '.develop'
+            buildConfigField "boolean", "DEVELOP", "true"
+        }
+        product {
+            buildConfigField "boolean", "DEVELOP", "false"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    debugImplementation 'com.didichuxing.doraemonkit:doraemonkit:2.0.0'
+    releaseImplementation 'com.didichuxing.doraemonkit:doraemonkit-no-op:2.0.0'
+
+    implementation project(':chat-core')
+    implementation project(':module-chat')
+    implementation project(':module-login')
+    implementation project(':lib-componentservice')
+    implementation project(':lib-update')
+    implementation project(':lib-push')
+
+    kapt arouterCompiler
+    annotationProcessor arouterCompiler
+    kapt glideCompiler
+    annotationProcessor glideCompiler
+}

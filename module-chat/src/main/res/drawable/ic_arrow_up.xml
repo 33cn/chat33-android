@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="10dp"
+    android:height="10dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <path
+        android:fillColor="@color/chat_color_accent"
+        android:pathData="M472.06,272.45l-399.23,399.23c-22.08,22.08 -22.08,57.79 0,79.87 22.02,22.02 57.79,22.08 79.87,0L512,392.26l359.3,359.3c22.02,22.02 57.79,22.08 79.87,0 22.08,-22.08 22.02,-57.79 0,-79.87L551.94,272.45C529.86,250.43 494.14,250.43 472.06,272.45z" />
+</vector>

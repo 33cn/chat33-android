@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppStartLoad" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@mipmap/splash_bg</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/chat_transparent</item>
+    </style>
+
+    <style name="update_progressbar_horizontal">
+        <item name="android:indeterminateOnly">false</item><!--水平的-->
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_grey</item>
+    </style>
+
+    <style name="chat_activity_dialog_style" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 设置弹出窗口的属性，frame叠加，isfloat是否浮动，tarnslucent是否半透明，dim是背景是否变暗 -->
+    <style name="Theme_audioDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="chat_button_white" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">@color/chat_color_bg</item>
+        <item name="colorControlHighlight">@color/chat_color_bg_pressed</item>
+    </style>
+
+    <style name="chat_button_accent" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">@color/chat_color_accent</item>
+        <item name="colorControlHighlight">@color/chat_color_title</item>
+    </style>
+
+    <style name="chat_reward_amount_text" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/sl_reward_amount</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/specialtext</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/chat_text_grey_light</item>
+    </style>
+
+    <style name="chat.picture.style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/chat_color_primary</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/chat_color_primary</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">true</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@drawable/app_ic_left_arrow</item>
+        <!--标题下拉箭头-->
+        <item name="picture.arrow_down.icon">@drawable/ic_arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture.arrow_up.icon">@drawable/ic_arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/chat_color_title</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/chat_color_accent</item>
+        <!--图片列表勾选样式-->
+        <item name="picture.checked.style">@drawable/app_selector</item>
+        <!--开启图片列表勾选数字模式-->
+        <item name="picture.style.checkNumMode">false</item>
+        <!--选择图片样式0/9-->
+        <item name="picture.style.numComplete">true</item>
+        <!--图片列表底部背景色-->
+        <item name="picture.bottom.bg">@color/chat_color_primary</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture.preview.textColor">@color/chat_color_accent</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture.complete.textColor">@color/chat_white</item>
+        <!--图片列表已完成文字背景-->
+        <item name="picture.complete.textBg">@drawable/picture_selector_btn_bg</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture.num.style">@drawable/num_oval</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/chat_color_title</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/chat_color_accent</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/chat_color_primary</item>
+        <!--预览界面底部背景色-->
+        <item name="picture.ac_preview.bottom.bg">@color/chat_color_primary</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@drawable/app_ic_left_arrow</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/chat_color_primary</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/chat_color_primary</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/chat_color_title</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture.folder_checked_dot">@drawable/blue_oval</item>
+        <!--blue_oval-->
+    </style>
+</resources>

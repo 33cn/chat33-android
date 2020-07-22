@@ -1,0 +1,21 @@
+android {
+    flavorDimensions "product", "build_type"
+    productFlavors {
+        chat33 {
+            dimension "product"
+        }
+        enc {
+            dimension "product"
+        }
+        develop {
+            dimension "build_type"
+        }
+        product {
+            dimension "build_type"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}

@@ -1,0 +1,9 @@
+<com.fuzamei.common.widget.IconView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_back_button"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="@string/icon_back_left"
+    android:textColor="@color/chat_color_accent"
+    android:textSize="17sp" />

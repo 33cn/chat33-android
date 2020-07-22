@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fzm.chat33.widget.ChatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_row"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_grey_r4"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="12sp"
+        tool:text="09-06 10:19" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_light_r4"
+        android:fontFamily="@font/iconfont"
+        android:gravity="center_vertical"
+        android:minHeight="25dp"
+        android:paddingLeft="9dp"
+        android:paddingTop="4dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="12sp"
+        tool:text="" />
+</com.fzm.chat33.widget.ChatLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">Chat33Pro</string>
+
+    <string name="login_tip_protocol">《Chat33Pro用户服务协议》</string>
+</resources>

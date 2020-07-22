@@ -1,0 +1,835 @@
+<resources>
+    <string name="application_name">Chat33</string>
+    <string name="app_name">Chat33模块</string>
+    <string name="qr_code_friend_tips">扫描二维码加我%1$s好友</string>
+    <string name="qr_code_group_tips">扫描二维码加我%1$s群</string>
+
+    <string name="search_my_account">我的账号：%1$s</string>
+    <string name="user_info_uid">UID %1$s</string>
+    <string name="user_info_account">帐号 %1$s</string>
+    <string name="room_id">群号 %1$s</string>
+    <string name="room_member_num">群成员 %1$d</string>
+    <string name="room_member_num_total">共%1$d人</string>
+    <string name="room_member_name_tips">在这里可以设置你在 &lt;font color="#61C7FF"&gt;%1$s&lt;/font&gt; 的昵称，这个昵称只会在此群内显示</string>
+
+    <string name="normal">按住 说话</string>
+    <string name="recording">松开 结束</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="shouzhishanghua">手指上滑，取消发送</string>
+    <string name="tooshort">录音时间过短</string>
+    <string name="toolong">录音时间过长</string>
+
+    <string name="forward_count">聊天记录 共%1$d条</string>
+
+    <string name="room_disable_tips">该群聊已被查封至%1$s，如需解封可联系客服：微信号zhaobikefu</string>
+    <string name="room_disable_forever_tips">该群聊已被永久查封，如需解封可联系客服：微信号zhaobikefu</string>
+
+    <string name="label_share">分享到Chat33</string>
+
+    <!--2019/06/11 开始整理硬编码字符串-->
+    <!--通用-->
+    <string name="chat_tips_unknown_error">未知错误</string>
+    <string name="chat_tips_tips">提示</string>
+    <string name="chat_action_confirm">确定</string>
+    <string name="chat_action_cancel">取消</string>
+    <string name="chat_action_set">设置</string>
+    <string name="chat_action_update">更新</string>
+    <string name="chat_action_ack">知道了</string>
+    <string name="chat_action_delete">删除</string>
+    <string name="chat_action_choose">选择</string>
+    <string name="chat_action_invite">邀请</string>
+    <string name="chat_action_remove">移除</string>
+    <string name="chat_action_share">分享</string>
+
+    <string name="chat_update_cancel">稍后更新</string>
+    <string name="chat_update">立即更新</string>
+
+    <string name="chat_date_pattern">yyyy年MM月dd日HH时mm分</string>
+
+    <!--权限相关类-->
+    <string name="chat_permission_storage">没有存储访问权限，功能无法使用</string>
+    <string name="chat_permission_record">没有录音权限，功能无法使用</string>
+    <string name="chat_permission_universal">没有权限，功能无法使用</string>
+
+    <string name="chat_msg_send_from_me">我</string>
+
+    <!--主界面-->
+    <string name="chat_splash_tips">区块链聊天应用</string>
+    <string name="chat_main_message">消息</string>
+    <string name="chat_main_wallet">钱包</string>
+    <string name="chat_main_contact">通讯录</string>
+    <string name="chat_main_mime">我的</string>
+    <string name="chat_main_tips1">已退出群聊</string>
+    <string name="chat_main_tips2">您已被移除群聊</string>
+    <string name="chat_main_tips3">群聊已解散</string>
+    <string name="chat_main_tips4">好友已删除</string>
+    <string name="chat_main_tips5">昵称不能为空</string>
+    <string name="chat_main_tips6">修改成功</string>
+
+    <!--本地搜索-->
+    <string name="chat_tips_search_history">搜索历史</string>
+    <string name="chat_tips_search_clear_history">清空历史</string>
+    <string name="chat_tips_search_hint">搜索好友、群、聊天记录等</string>
+    <string name="chat_tips_search_hint1">搜索好友</string>
+    <string name="chat_tips_search_hint2">搜索群</string>
+    <string name="chat_tips_search_hint3">搜索聊天记录</string>
+    <string name="chat_tips_search_type1">联系人</string>
+    <string name="chat_tips_search_type2">群聊</string>
+    <string name="chat_tips_search_type3">聊天记录</string>
+    <string name="chat_tips_search_result_more">查看更多</string>
+    <string name="chat_tips_search_log_target">\"%1$s\"的记录</string>
+    <string name="chat_tips_search_log_count">%1$d条相关聊天记录</string>
+
+    <!--我的页面-->
+    <string name="chat_tips_identification">认证信息：&lt;font color="%1$s"&gt;去认证&#xe7e4;&lt;/font&gt;</string>
+    <string name="chat_tips_identification_tip1">认证信息：</string>
+    <string name="chat_tips_identification_tip2">认证信息：%1$s</string>
+    <string name="chat_tips_identification_tip3">认证信息：%1$s&#xe7e4;</string>
+
+    <!--好友验证-->
+    <string name="chat_title_add_verify1">好友验证</string>
+    <string name="chat_title_add_verify2">入群验证</string>
+    <string name="chat_tips_verify1">你需要发送验证申请，等待对方通过</string>
+    <string name="chat_tips_verify2">验证申请</string>
+    <string name="chat_tips_verify3">我是&#160;%1$s</string>
+    <string name="chat_tips_verify4">验证申请已提交</string>
+    <string name="chat_tips_verify5">已发送入群申请</string>
+    <string name="chat_action_verify_send">发送</string>
+
+    <!--群管理员设置-->
+    <string name="chat_title_admin_set">管理员设置</string>
+    <string name="chat_tips_room_master">群主</string>
+    <string name="chat_tips_admin_num">管理员(%1$d/10)</string>
+    <string name="chat_tips_add_admin">添加管理员成功</string>
+    <string name="chat_action_add_admin">添加管理员</string>
+
+    <!--聊天界面-->
+    <string name="chat_tips_shoot">拍摄</string>
+    <string name="chat_tips_choose_from">从相册选择</string>
+    <string name="chat_tips_no_more_msg">没有更多了</string>
+    <string name="chat_tips_room_notification">公告消息</string>
+    <string name="chat_tips_new_msg">%1$s条新消息</string>
+    <string name="chat_tips_chat_operate1">解除禁言成功</string>
+    <string name="chat_tips_chat_operate2">已切换为听筒模式</string>
+    <string name="chat_tips_chat_operate3">已切换为扬声器模式</string>
+    <string name="chat_tips_chat_operate4">已复制到剪贴板</string>
+    <string name="chat_tips_chat_operate5">非文本信息不可复制</string>
+    <string name="chat_tips_chat_operate6">已撤回一条消息</string>
+    <string name="chat_action_forward_single">逐条转发</string>
+    <string name="chat_action_forward_multiple">合并转发</string>
+    <string name="chat_action_msg_star">收藏</string>
+    <string name="chat_action_msg_delete">删除</string>
+    <string name="chat_dialog_delete">确认删除</string>
+    <string name="chat_tip_packet_share_title">【Chat33】好友送你%1$s大红包</string>
+    <string name="chat_tip_packet_share_content">Chat33是一款基于区块链技术的聊天应用，可发送比特元BTY等数字资产！</string>
+    <string name="chat_tip_choose_msg1">请选择要删除的消息</string>
+    <string name="chat_tip_choose_msg2">请选择要转发的消息</string>
+    <string name="chat_dialog_set_encrypt_key">你尚未设置密聊私钥，无法在加密群聊发送消息，请先设置密聊私钥</string>
+    <string name="chat_dialog_update_group_key">你的群聊密钥不存在，需要更新后才能发送加密消息</string>
+    <!--聊天输入框-->
+    <string name="chat_tips_input_msg1">不能发送空白信息</string>
+    <string name="chat_tips_input_msg2">系统消息只能发文本信息</string>
+    <string name="chat_tips_input_msg3">未检测到SD卡</string>
+
+    <string name="chat_tips_input_send">发送</string>
+    <string name="chat_tips_input_say_sth">想说点什么</string>
+    <string name="chat_tips_input_red_packet">红包</string>
+    <string name="chat_tips_input_media">图片/视频</string>
+    <string name="chat_tips_input_shoot">拍摄</string>
+    <string name="chat_tips_input_snap_msg">阅后即焚</string>
+    <string name="chat_tips_input_file">文件</string>
+    <string name="chat_tips_input_text_packet">红包消息</string>
+    <string name="chat_tips_input_transfer">转账</string>
+    <string name="chat_tips_input_receipt">收款</string>
+    <string name="chat_tips_input_card">名片</string>
+
+    <!--聊天文件-->
+    <string name="chat_title_chat_file">聊天文件</string>
+    <string name="chat_tips_file">文件</string>
+    <string name="chat_tips_media">图片/视频</string>
+    <string name="chat_action_msg_download">下载</string>
+    <string name="chat_tips_chat_file1">请选择要下载的文件</string>
+    <string name="chat_tips_chat_file2">正在下载文件到%1$s</string>
+    <string name="chat_tips_chat_file3">请选择要删除的文件</string>
+    <string name="chat_tips_chat_file4">请选择要转发的消息</string>
+    <string name="chat_tips_chat_file5">有%1$d个文件删除失败！除群主和管理员外，只能删除自己上传的文件</string>
+    <string name="chat_tips_chat_file6">文件已上传</string>
+    <string name="chat_tips_chat_file7">文件不存在</string>
+    <string name="chat_tips_chat_file8">文件大小不能超过100M</string>
+    <string name="chat_tips_chat_file9">文件发送失败,请重新选择</string>
+    <string-array name="chat_choose_delete_file">
+        <item>从聊天文件删除</item>
+        <item>从本设备中删除</item>
+        <item>取消</item>
+    </string-array>
+    <!--聊天文件搜索-->
+    <string name="chat_tips_msg_not_exist">消息不存在</string>
+    <string name="chat_tips_already_dismiss">已解散</string>
+    <string name="chat_tips_no_name">无名称</string>
+    <string name="chat_tips_encrypted_file">无法解密的文件</string>
+    <string name="chat_tips_search_chat_file">文件名/上传者</string>
+    <string name="chat_tips_start_download">开始下载…</string>
+    <string name="chat_tips_downloading">正在下载中…</string>
+    <string name="chat_tips_file_download_success">文件已下载成功</string>
+    <string name="chat_tips_file_download_to">文件已下载至%1$s</string>
+    <string name="chat_tips_video_download_success">视频已下载成功</string>
+    <string name="chat_tips_video_download_to">视频已下载至%1$s</string>
+    <string name="chat_tips_file_downloading_to">正在下载文件到%1$s</string>
+    <string name="chat_tips_file_download_fail">文件下载失败</string>
+    <string name="chat_tips_video_download_fail">视频下载失败</string>
+    <!--群用户聊天文件-->
+    <string name="chat_title_user_chat_file">%1$s的文件</string>
+    <string name="chat_tips_delete_not_permitted">有%1$d个文件删除失败！除群主和管理员外，只能删除自己上传的文件</string>
+
+    <!--联系人选择-->
+    <string name="chat_title_contact_select">选择联系人</string>
+    <string name="chat_tips_recent">最近联系</string>
+    <string name="chat_tips_friends">好友</string>
+    <string name="chat_tips_rooms">群聊</string>
+    <string name="chat_tips_chat_rooms">聊天室</string>
+    <string name="chat_tips_contact_select1">转发完成</string>
+    <string name="chat_tips_contact_select2">请选择要转发的人</string>
+    <string name="chat_tips_contact_select3">转发的好友/群聊中包含%1$d个禁言、解除关系、黑名单的好友/群聊，无法收到转发的消息</string>
+    <string name="chat_tips_contact_select4">图片发送失败,请重新选择</string>
+    <string name="chat_tips_contact_select5">发送失败,请重新选择</string>
+
+    <string name="chat_tips_img_saved">图片已保存</string>
+    <string name="chat_tips_img_not_exist">图片不存在</string>
+    <string name="chat_tips_img_zip_fail">图片压缩失败</string>
+
+    <!--创建群聊-->
+    <string name="chat_title_create_group1">创建群聊</string>
+    <string name="chat_title_create_group2">添加新成员</string>
+    <string name="chat_action_group_create">创建</string>
+    <string name="chat_action_group_skip">跳过</string>
+    <string name="chat_action_group_add_member">添加</string>
+    <string name="chat_dialog_create_group_set_key">你尚未设置密聊私钥，无法创建加密群聊，请先设置密聊私钥</string>
+    <string name="chat_action_continue_group_create">继续创建</string>
+    <string name="chat_action_continue_group_invite">继续邀请</string>
+    <string name="chat_tips_create_group1">有%1$d个成员未开启加密功能，无法加入加密群聊，继续创建将去除该部分成员。</string>
+    <string name="chat_tips_create_group2">创建成功</string>
+    <string name="chat_tips_create_group3">请选择邀请的人</string>
+    <string name="chat_tips_create_group4">有%1$d个好友未开启加密功能，无法加入加密群聊，继续邀请将去除该部分好友。</string>
+    <string name="chat_tips_create_group5">邀请成功</string>
+
+    <!--修改头像-->
+    <string name="chat_tips_edit_group_empty">群名不能为空</string>
+    <string name="chat_title_edit_avatar">头像</string>
+    <string name="chat_tips_edit_success">修改成功</string>
+    <string name="chat_tips_pic_upload_fail">图片上传失败,请重新选择</string>
+    <string-array name="chat_choose_edit_avatar">
+        <item>拍照</item>
+        <item>从相册选择</item>
+        <item>保存图片</item>
+        <item>取消</item>
+    </string-array>
+
+    <!--修改好友备注-->
+    <string name="chat_title_friend_remark">备注信息</string>
+    <string name="chat_tips_friend_remark1">备注名</string>
+    <string name="chat_tips_friend_remark2">编辑备注名</string>
+    <string name="chat_tips_friend_remark3">电话</string>
+    <string name="chat_tips_friend_remark4">描述</string>
+    <string name="chat_tips_friend_remark5">添加更多备注信息</string>
+    <string name="chat_tips_friend_remark6">图片</string>
+    <string name="chat_tips_num_3">%1$d/3</string>
+    <string name="chat_tips_num_20">%1$d/20</string>
+    <string name="chat_tips_num_50">%1$d/50</string>
+    <string name="chat_tips_num_400">%1$d/400</string>
+    <string name="chat_tips_num_500">%1$d/500</string>
+    <string name="chat_tips_phone_remark">手机</string>
+    <string-array name="chat_choose_friend_remark1">
+        <item>拍照</item>
+        <item>从相册选择</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="chat_choose_friend_remark2">
+        <item>转发给朋友</item>
+        <item>保存图片</item>
+        <item>删除图片</item>
+        <item>取消</item>
+    </string-array>
+
+    <!--群昵称、公告编辑-->
+    <string name="chat_title_edit_group1">发布公告</string>
+    <string name="chat_title_edit_group2">我在本群的昵称</string>
+    <string name="chat_tips_edit_group1">编辑群内昵称</string>
+    <string name="chat_tips_edit_group2">编辑公告内容</string>
+    <string name="chat_tips_edit_group3">群内昵称修改成功</string>
+    <string name="chat_tips_edit_group4">公告发布成功</string>
+    <string name="chat_tips_group_remark">备注名</string>
+    <string name="chat_tips_group_pub_notification">发布公告</string>
+    <string name="chat_action_publish">发布</string>
+
+    <!--修改群名和个人昵称-->
+    <string name="chat_title_edit_info">修改昵称</string>
+    <string name="chat_tips_edit_info1">昵称</string>
+    <string name="chat_tips_edit_info2">编辑昵称</string>
+    <string name="chat_tips_edit_info3">群名称</string>
+    <string name="chat_tips_edit_info4">编辑群名称</string>
+
+    <!--文件详情页面-->
+    <string name="chat_tips_can_not_open">%1$s暂不支持打开此类文件\n你可使用其他应用打开</string>
+    <string name="chat_tips_open_with">用其他应用打开</string>
+    <string name="chat_tips_select_open_type">请选择对应的软件打开该文件</string>
+    <string name="chat_tips_unsupported_file_type">不支持的文件类型</string>
+    <string name="chat_tips_file_not_found">文件不存在</string>
+    <string-array name="chat_choose_file_detail">
+        <item>转发给朋友</item>
+        <item>用其他应用打开</item>
+        <item>分享至微信</item>
+        <item>取消</item>
+    </string-array>
+
+    <!--合并转发详情-->
+    <string name="chat_title_forward_list1">[%1$s]和[%2$s]的个人聊天记录</string>
+    <string name="chat_title_forward_list2">[%1$s]的聊天记录</string>
+
+    <!--群聊详情-->
+    <string name="chat_title_group_info1">群聊详情</string>
+    <string name="chat_title_group_info2">详细资料</string>
+    <string name="chat_tips_group_uid">群号&#160;</string>
+    <string name="chat_tips_group_member">群成员</string>
+    <string name="chat_tips_group_notification">群公告</string>
+    <string name="chat_tips_group_my_remark">我在本群的昵称</string>
+    <string name="chat_tips_group_file">群文件</string>
+    <string name="chat_tips_group_quiet">消息免打扰</string>
+    <string name="chat_tips_group_top">置顶聊天</string>
+    <string name="chat_tips_group_admin_set">管理员设置</string>
+    <string name="chat_tips_group_giveaway">转让群主</string>
+    <string name="chat_tips_group_giveaway_success">转让群主成功</string>
+    <string name="chat_tips_group_join_limit">加群限制</string>
+    <string name="chat_tips_group_friend_limit">加好友限制</string>
+    <string name="chat_tips_group_mute">禁言设置</string>
+    <string name="chat_tips_group_history">新成员可查看历史记录</string>
+    <string name="chat_tips_cant_join_group">该群禁止加入</string>
+    <string name="chat_action_enter_group">进入群聊</string>
+    <string name="chat_action_join_group">申请入群</string>
+    <string name="chat_action_dismiss_group">解散群聊</string>
+    <string name="chat_tips_group_info1">这是你自己</string>
+    <string name="chat_tips_group_info2">共%1$d条</string>
+    <string name="chat_tips_group_info3">共%1$d人</string>
+    <string name="chat_tips_group_info4">需要审批</string>
+    <string name="chat_tips_group_info5">无需审批</string>
+    <string name="chat_tips_group_info6">禁止加群</string>
+    <string name="chat_tips_group_info7">群内可加好友</string>
+    <string name="chat_tips_group_info8">群内禁止加好友</string>
+    <string name="chat_tips_group_info9">退出群聊</string>
+    <string name="chat_tips_group_info10">解散群聊</string>
+    <string name="chat_tips_group_info11">全员可发言</string>
+    <string name="chat_tips_group_info12">%1$d名成员已禁言</string>
+    <string name="chat_tips_group_info13">%1$d名成员可发言</string>
+    <string name="chat_tips_group_info14">全员禁言（除群主和管理员）</string>
+    <string name="chat_tips_group_info15">修改设置成功</string>
+    <string name="chat_tips_group_info16">解散群聊成功</string>
+    <string name="chat_tips_group_info17">退出群聊成功</string>
+    <string name="chat_tips_group_info18">设置成功</string>
+    <string name="chat_tips_group_info19">公告删除成功</string>
+    <string name="chat_tips_group_info20">该群不存在</string>
+    <string name="chat_dialog_dismiss_group">确定解散群聊 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; 吗？</string>
+    <string name="chat_dialog_exit_group">退群通知仅群主和管理员可见，确定退出群聊 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; 吗？</string>
+    <string name="chat_dialog_delete_group_notice">确定要删除这条公告吗？</string>
+    <string name="chat_dialog_join_group_no_key">你尚未设置密聊私钥，无法申请加入加密群聊，请先设置密聊私钥</string>
+    <string name="chat_dialog_encrypt_chat_file">无法解密的文件，可前往安全管理导入以前的助记词查看！</string>
+    <string name="chat_dialog_encrypt_chat_image">无法解密的图片，可前往安全管理导入以前的助记词查看！</string>
+    <string name="chat_dialog_encrypt_chat_video">无法解密的视频，可前往安全管理导入以前的助记词查看！</string>
+    <string-array name="chat_choose_join_limit">
+        <item>需要审批</item>
+        <item>无需审批</item>
+        <item>禁止加群</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="chat_choose_join_limit_tips">
+        <item>加群需要群主或管理员同意</item>
+        <item>加群无需群主或管理员同意</item>
+        <item>除群主/管理员邀请外不允许加群</item>
+        <item></item>
+    </string-array>
+    <string-array name="chat_choose_add_friend_limit">
+        <item>群内可加好友</item>
+        <item>群内禁止加好友</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="chat_choose_group_mute">
+        <item>全员可发言</item>
+        <item>全员禁言</item>
+        <item>设置发言名单</item>
+        <item>设置禁言名单</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="chat_choose_add_friend_tips">
+        <item></item>
+        <item>除群主和管理员</item>
+        <item>新成员默认禁言</item>
+        <item>新成员默认发言</item>
+        <item></item>
+    </string-array>
+
+    <!--群成员批量操作-->
+    <string name="chat_title_member_operate1">移除群成员</string>
+    <string name="chat_title_member_operate2">转让群主</string>
+    <string name="chat_title_member_operate3">添加管理员</string>
+    <string name="chat_title_member_operate4">禁言名单</string>
+    <string name="chat_title_member_operate5">发言名单</string>
+    <string name="chat_dialog_giveaway">确定转让群主给 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; 吗？</string>
+    <string name="chat_tips_select_all">全选</string>
+    <string name="chat_tips_member_type">群主、管理员</string>
+    <string name="chat_action_member_operate1">移除</string>
+    <string name="chat_action_member_operate2">禁言</string>
+    <string name="chat_action_member_operate3">加入</string>
+    <string name="chat_tips_member_operate1">请选择踢出的人</string>
+    <string name="chat_tips_member_operate2">移除成功</string>
+    <string name="chat_tips_member_operate3">请选择要加入禁言名单的人</string>
+    <string name="chat_tips_member_operate4">加入禁言名单成功</string>
+    <string name="chat_tips_member_operate5">请选择要加入发言名单的人</string>
+    <string name="chat_tips_member_operate6">加入发言名单成功</string>
+
+    <!--我的二维码界面-->
+    <string name="chat_title_my_qr_code">我的二维码</string>
+    <string name="chat_title_group_qr_code">群二维码</string>
+    <string name="chat_tips_copy_code">点击复制二维码</string>
+    <string name="chat_tips_code_saved">二维码已保存</string>
+    <string name="chat_tips_code_copyed">复制UID成功</string>
+    <string name="chat_tips_group_code_copyed">复制群号成功</string>
+    <string name="chat_tips_share_wechat">微信</string>
+    <string name="chat_tips_share_moment">朋友圈</string>
+    <string name="chat_tips_share_title">好友邀请您加入区块链聊天——Chat33</string>
+    <string name="chat_tips_share_content">Chat33是一款基于区块链技术的聊天应用，可发送比特元BTY等数字资产！</string>
+    <string name="chat_action_save">保存</string>
+
+    <!--推广详情-->
+    <string name="chat_title_promote_detail">推广详情</string>
+    <string name="chat_tips_promote_rule">规则</string>
+
+    <string name="chat_title_qr_scanner">扫一扫</string>
+    <string name="chat_tips_qr_scanner">请将二维码放入扫描框内</string>
+    <string name="chat_tips_qr_unrecongnize">无法处理结果:&#160;%1$s</string>
+
+    <!--新朋友申请列表-->
+    <string name="chat_title_new_friends">新朋友</string>
+    <string name="chat_tips_new_friend_status1">等待验证</string>
+    <string name="chat_tips_new_friend_status2">已拒绝</string>
+    <string name="chat_tips_new_friend_status3">已添加</string>
+    <string name="chat_tips_new_friend1">已同意好友申请</string>
+    <string name="chat_tips_new_friend2">已拒绝好友申请</string>
+    <string name="chat_tips_new_friend3">已同意入群申请</string>
+    <string name="chat_tips_new_friend4">已拒绝入群申请</string>
+
+    <!--搜索用户和群聊-->
+    <string name="chat_tips_search_friends">输入手机号、UID或群号</string>
+    <string name="chat_tips_search_tag1">群聊</string>
+    <string name="chat_tips_search_tag2">用户</string>
+
+    <string name="chat_tips_red_packet1">红包记录</string>
+    <string name="chat_tips_red_packet2">已存入钱包，可转账</string>
+    <string name="chat_tips_red_packet3">分享红包</string>
+
+    <!--安全管理-->
+    <string name="chat_title_security_setting">安全管理</string>
+    <string name="chat_tips_pay_password">支付密码</string>
+    <string name="chat_tips_encrypt_key">密聊密码</string>
+    <string name="chat_tips_export_words">导出助记词</string>
+    <string name="chat_tips_import_old_words">导入旧助记词</string>
+    <string name="chat_tips_action1">修改密码</string>
+    <string name="chat_tips_action2">设置密码</string>
+    <!--支付密码设置修改-->
+    <string name="chat_title_pay_password1">设置支付密码</string>
+    <string name="chat_title_pay_password2">修改支付密码</string>
+    <string name="chat_tips_input_old_pwd6">请输入6位原密码</string>
+    <string name="chat_tips_pay_password1">正在为帐号 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; %3$s</string>
+    <string name="chat_tips_pay_password2">设置成功</string>
+    <string name="chat_tips_pay_password3">修改成功</string>
+
+    <!--发红包界面-->
+    <string name="chat_title_send_red_packet">发红包</string>
+    <string name="chat_tips_coin_type">币种</string>
+    <string name="chat_tips_default_remark">恭喜发财，大吉大利！</string>
+    <string name="chat_tips_default_remark1">请输入消息内容</string>
+    <string name="chat_tips_packet_num">红包个数</string>
+    <string name="chat_tips_packet_num_hint">填入数量</string>
+    <string name="chat_tips_packet_unit">个</string>
+    <string name="chat_tips_total_num">总数额</string>
+    <string name="chat_tips_single_num">单个数额</string>
+    <string name="chat_tips_packet_fee">群红包每次收取%1$s%2$s手续费</string>
+    <string name="chat_tips_coin_num_limit1">最小%1$s</string>
+    <string name="chat_tips_coin_num_limit2">单次红包最大限额为%1$s</string>
+    <string name="chat_tips_coin_num_limit3">单个红包不能小于%1$s</string>
+    <string name="chat_tips_coin_num_limit4">资产不足</string>
+    <string name="chat_tips_red_packet_assets">可用&#160;%1$s</string>
+    <string name="chat_tips_red_packet_error1">币种数额不能为空</string>
+    <string name="chat_tips_red_packet_error2">红包个数不能为空</string>
+    <string name="chat_tips_red_packet_error3">币种数额不能小于%1$s</string>
+    <string name="chat_dialog_red_packet">为了您的账户资金安全，请先设置支付密码</string>
+    <string name="chat_action_send_red_packet">塞币进红包</string>
+    <string name="chat_action_send_reward_packet">确定打赏</string>
+    <string name="chat_title_send_reward_packet">打赏</string>
+    <string name="chat_tips_reward_packet_limit">单日最高限额¥10000</string>
+    <string name="chat_tips_reward_num">数额</string>
+    <string name="chat_tips_coin_num_limit5">金额不能小于%1$s</string>
+
+    <!--设置中心-->
+    <string name="chat_title_settings">设置中心</string>
+    <string name="chat_tips_privacy_title">服务隐私条款</string>
+    <string name="chat_tips_hide_group_msg">隐藏群消息设置</string>
+    <string name="chat_tips_add_friend_verify">加我为好友时需要验证</string>
+    <string name="chat_tips_add_friend_question">加我为好友时需回答问题</string>
+    <string name="chat_tips_question">问题</string>
+    <string name="chat_tips_answer">答案</string>
+    <string name="chat_tips_confirm_invite">邀请我入群需要确认</string>
+    <string name="chat_tips_push_message">新消息推送</string>
+    <string name="chat_tips_push_message_detail">推送显示消息详情</string>
+    <string name="chat_tips_sound">声音</string>
+    <string name="chat_tips_vibrate">震动</string>
+    <string name="chat_tips_multiple_devices">多设备管理</string>
+    <string name="chat_tips_clean_cache">清理缓存</string>
+    <string name="chat_tips_wallet_protocol">钱包使用协议</string>
+    <string name="chat_title_set_verify_question">设置问题</string>
+    <string name="chat_tips_empty_question">问题不能为空</string>
+    <string name="chat_tips_empty_answer">答案不能为空</string>
+    <string name="chat_tips_verify_set">设置成功</string>
+
+    <!--修改助记词密码-->
+    <string name="chat_title_set_encrypt_password">设置密聊密码</string>
+    <string name="chat_title_encrypt_password">修改密聊密码</string>
+    <string name="chat_tips_old_encrypt_pwd">旧密码</string>
+    <string name="chat_tips_old_encrypt_pwd_hint">请输入旧密码</string>
+    <string name="chat_tips_first_encrypt_pwd_hint">请设置密码</string>
+    <string name="chat_tips_second_encrypt_pwd_hint">请再次输入密码</string>
+    <string name="chat_tips_forget_password">忘记密码</string>
+    <string name="chat_tips_new_encrypt_pwd">新密码</string>
+    <string name="chat_tips_new_encrypt_pwd_hint">请再次输入新密码</string>
+    <string name="chat_tips_update_encrypt_pwd1">密聊密码修改成功</string>
+    <string name="chat_tips_update_encrypt_pwd2">密码错误</string>
+    <string name="chat_tips_update_encrypt_pwd3">请输入8–16位字符</string>
+    <string name="chat_tips_update_encrypt_pwd4">请输入数字、字母或者符号组合</string>
+    <string name="chat_tips_update_encrypt_pwd5">请设置8–16位数字、字母或符号组合</string>
+    <string name="chat_tips_update_encrypt_pwd6">两次密码不一致</string>
+    <string name="chat_tips_update_encrypt_pwd7">密聊密码设置成功</string>
+
+    <!--用户详情页面-->
+    <string name="chat_title_user_detail">详细资料</string>
+    <string name="chat_tips_no_user">该用户不存在</string>
+    <string name="chat_tips_user_uid">UID:&#160;%1$s</string>
+    <string name="chat_tips_group_uid2">群号:&#160;%1$s</string>
+    <string name="chat_tips_user_nickname">昵称：%1$s</string>
+    <string name="chat_tips_user_cant_add">该群禁止互加好友</string>
+    <string name="chat_tips_add_success">添加成功</string>
+    <string name="chat_tips_delete_success">删除成功</string>
+    <string name="chat_tips_wrong_answer">答案不正确</string>
+    <string name="chat_tips_mute_state1">可发言</string>
+    <string name="chat_tips_mute_state2">禁言中</string>
+    <string name="chat_tips_mute_state3">全员禁言</string>
+    <string name="chat_tips_mute_state4">禁言%1$s</string>
+    <string name="chat_tips_mute_state5">禁言中&#160;%1$s</string>
+    <string name="chat_tips_enable_mute">禁言成功</string>
+    <string name="chat_tips_disable_mute">解除禁言成功</string>
+
+    <string name="chat_dialog_no_msg_key">对方未设置密聊私钥，加密消息将以普通消息发送</string>
+    <string name="chat_dialog_delete_friend">删除后，将同时删除与该联系人的聊天消息，确定删除联系人 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; 吗？</string>
+    <string name="chat_tips_user_desc">描述</string>
+    <string name="chat_tips_user_pic">图片</string>
+    <string name="chat_tips_user_chat_history">查找聊天记录</string>
+    <string name="chat_tips_user_chat_file">聊天文件</string>
+    <string name="chat_tips_user_quiet">消息免打扰</string>
+    <string name="chat_tips_user_top">置顶聊天</string>
+    <string name="chat_tips_user_encrypt_chat">加密聊天</string>
+    <string name="chat_tips_user_recommend">推荐给朋友</string>
+    <string name="chat_tips_user_source">来源</string>
+    <string name="chat_tips_user_mute">禁言</string>
+    <string name="chat_action_send_msg">发消息</string>
+    <string name="chat_action_delete_friend">删除好友</string>
+    <string name="chat_action_add_friend">添加好友</string>
+
+    <!--大图浏览界面-->
+    <string name="chat_action_large_pic_save">保存图片</string>
+    <string name="chat_action_large_pic_forward">转发图片</string>
+    <string name="chat_action_large_pic_qr_scan">识别二维码</string>
+
+    <!--系统分享-->
+    <string name="chat_tips_resource_fail">资源获取失败</string>
+    <string name="chat_search_friend_hint">搜索好友</string>
+    <string name="chat_search_ait_user_hint">搜索群成员</string>
+    <string name="chat_search_group_friend_hint">搜索群成员</string>
+
+    <string name="chat_share_fail">分享失败</string>
+    <string name="chat_share_success">分享成功</string>
+    <string name="chat_share_cancel">分享取消</string>
+    <string name="chat_error_share_param">分享失败，参数有误</string>
+    <string-array name="chat_refresh_header">
+        <item>查看更早记录...</item>
+        <item>松开开始加载...</item>
+        <item>正在加载...</item>
+        <item>加载完成</item>
+    </string-array>
+    <string name="chat_error_layout_empty">布局异常，一定要有内容布局</string>
+    <string name="chat_error_layout_count">布局异常，最多三个，最少一个</string>
+    <string name="chat_date_year_str">%1$s年</string>
+    <string name="chat_date_month_str">%1$s月</string>
+    <string name="chat_date_year">%1$d年</string>
+    <string name="chat_date_month_lower">0%1$d月</string>
+    <string name="chat_date_month">%1$d月</string>
+    <string name="chat_date_day">%1$d日</string>
+    <string name="chat_date_all_year">全年</string>
+    <string name="chat_selected_date">已选择 %1$s</string>
+    <string name="chat_selected_date_all_year">已选择 %1$s全年</string>
+    <string name="chat_selected_year_all_year">已选择 %1$d年全年</string>
+    <string name="chat_mute_cancel">取消禁言</string>
+    <string name="chat_confirm_mute">确定禁言吗？</string>
+    <string name="chat_send_coin_message">发送了一个%1$s红包</string>
+    <string name="chat_error_permission_storage">需要存储设备权限才能保存</string>
+    <string name="chat_error_unsupport_message_type">不支持的消息类型，请更新版本后查看</string>
+    <string name="chat_file_size">文件 %1$s</string>
+    <string name="chat_encrypt_message">加密消息</string>
+    <string name="chat_forward_friend_content">转发：我与[%1$s]的聊天</string>
+    <string name="chat_forward_room_content">转发：群聊[%1$s]的聊天</string>
+    <string name="chat_transfer_to_me">转账给你</string>
+    <string name="chat_transfer_to_other">转账给对方</string>
+    <string name="chat_copyed_message">已复制</string>
+    <string name="chat_unfold">收起</string>
+    <string name="chat_fold">展开</string>
+    <string name="chat_red_packet_look">查看红包</string>
+    <string name="chat_red_packet_recevied">红包已领取</string>
+    <string name="chat_red_packet_recevie_finish">红包已领完</string>
+    <string name="chat_red_packet_overdue">红包已过期</string>
+    <string name="chat_red_packet_overdue_tip">超过24小时未领取的红包将会被退回至原账户</string>
+    <string name="chat_red_packet_recevie_count">已领取%1$d/%2$d个，剩%3$d个</string>
+    <string name="chat_red_packet_owner">的%1$s红包</string>
+    <string name="chat_receipt_payment">已付款</string>
+    <string name="chat_receipt_to_me">向你收款</string>
+    <string name="chat_receipt_to_other">向对方收款</string>
+    <string name="chat_encrypted_message">无法解密的消息</string>
+    <string name="chat_error_select_max_count">最多选择50条消息</string>
+    <string name="chat_error_open_weixin">检查到您手机没有安装微信，请安装后使用该功能</string>
+    <string name="chat_error_encrypt_password">密聊密码错误</string>
+    <string name="chat_error_encrypt_password_length">密聊密码长度错误</string>
+    <string name="chat_error_receive_message">收不到短信？试试语音验证</string>
+    <string name="chat_warn_receive_radio_phone">请注意接听语音验证电话</string>
+    <string name="chat_send_code_success_tip">短信验证码已发送，请耐心等待</string>
+    <string name="chat_send_code_to">验证码发送至 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt;</string>
+    <string name="chat_send_code_success">验证码发送成功</string>
+    <string name="chat_update_downloading">正在下载</string>
+    <string name="chat_update_download_begin">准备下载</string>
+    <string name="chat_update_install">点击安装</string>
+    <string name="chat_send_code">获取验证码</string>
+    <string name="chat_send_code_timer">已发送%1$ds</string>
+    <string name="chat_count">%1$d 个</string>
+    <string name="chat_red_packet_send_total_label">共发出红包</string>
+    <string name="chat_red_packet_send_total">共发出&lt;font color="#FFDF5F"&gt;%1$d&lt;/font&gt;个%2$s红包，共计</string>
+    <string name="chat_red_packet_recevie_total_label">共收到红包</string>
+    <string name="chat_red_packet_receive_total">共收到&lt;font color="#FFDF5F"&gt;%1$d&lt;/font&gt;个%2$s红包，共计</string>
+    <string name="chat_red_packet_count_status1">领取中 %1$d/%2$d</string>
+    <string name="chat_red_packet_count_status2">已领完 %1$d/%2$d</string>
+    <string name="chat_red_packet_count_status3">已过期 %1$d/%2$d</string>
+    <string name="chat_red_packet_count_status4">已完成 %1$d/%2$d</string>
+    <string name="chat_red_packet_count_status5">未知 %1$d/%2$d</string>
+    <string name="chat_red_packet_normal">普通红包</string>
+    <string name="chat_red_packet_luck">拼手气红包</string>
+    <string name="chat_red_packet_receive_status1">正在入账</string>
+    <string name="chat_red_packet_receive_status2">入账成功</string>
+    <string name="chat_red_packet_receive_status3">入账失败</string>
+    <string name="chat_red_packet_receive_status4">入账过期</string>
+    <string name="chat_red_packet_receive_status5">未知</string>
+    <string-array name="chat_red_packet_tab">
+        <item>收到红包</item>
+        <item>发出红包</item>
+    </string-array>
+    <string name="chat_all">全部</string>
+    <string name="chat_wallet_see">查看钱包</string>
+    <string name="chat_speak_time_remain">还可以说%1$d秒</string>
+    <string name="chat_error_qcode_fail">未识别到二维码</string>
+    <string name="chat_error_permission_denied">权限未授予</string>
+    <string name="chat_dialog_delete_message">确定删除 &lt;font color="%1$s"&gt;%2$s&lt;/font&gt; 的聊天吗？</string>
+    <string name="chat_top_operate">置顶聊天</string>
+    <string name="chat_top_cancel">取消置顶</string>
+    <string name="chat_disturb_operate">消息免打扰</string>
+    <string name="chat_disturb_cancel">取消免打扰</string>
+    <string-array name="chat_me_tab">
+        <item>手机</item>
+        <item>邮箱</item>
+    </string-array>
+    <string name="chat_logout_message">确定要退出登录吗？</string>
+    <string name="chat_function_not_open">该功能暂未开放~</string>
+    <string name="chat_function_developing">功能正在开发中~</string>
+    <string name="chat_identification">已认证</string>
+    <string name="chat_click_success">点击成功</string>
+    <string name="chat_error_link">链接错误</string>
+    <string-array name="chat_browser_options">
+        <item>复制链接地址</item>
+        <item>在浏览器中打开</item>
+        <item>取消</item>
+    </string-array>
+    <string name="chat_link_copyed">链接已复制</string>
+    <string name="chat_invite_count">已邀请%1$d人</string>
+    <string name="chat_invite_count_str">已邀请%1$s人</string>
+    <string name="chat_current_version_newest">当前已是最新版本</string>
+    <string name="chat_error_upload_video">视频发送失败</string>
+    <string name="chat_error_upload_video_size">视频大小不能超过100M</string>
+    <string name="chat_error_upload_video_no_exist">视频不存在</string>
+    <string name="chat_error_upload_audio">语音发送失败</string>
+    <string name="chat_error_upload_file">文件发送失败,请重新选择</string>
+    <string name="chat_error_upload_file_size">文件大小不能超过100M</string>
+    <string name="chat_error_upload_file_no_exist">文件不存在</string>
+    <string name="chat_error_upload_image">图片发送失败,请重新选择</string>
+    <string name="chat_error_upload_image_zip">图片压缩错误</string>
+    <string name="chat_error_upload_image_no_exist">图片不存在</string>
+    <string name="chat_error_input_password_incomplete">请输入完整密码</string>
+    <string name="chat_unset_real_name">未实名</string>
+    <string name="chat_set_real_name">已实名</string>
+    <string name="chat_time_skip">跳过 %1$d</string>
+    <string name="chat_real_name">实名</string>
+    <string name="chat_all_people">所有人</string>
+    <string name="chat_send_apply_success">发送申请成功</string>
+    <string name="chat_guess_like">猜你喜欢</string>
+    <string name="chat_group_no_suggest">暂无推荐群聊</string>
+    <string name="chat_setting_notification">通知设置</string>
+    <string name="chat_error_permission_notification">还没有开启通知权限，点击去开启</string>
+    <string name="chat_permission_notification_opened_message">通知权限已经被打开\n手机型号:%1$s \nSDK版本:%2$d \n系统版本:%3$s \n软件包名:%4$s</string>
+    <string name="chat_promote_total_reward">累计奖励%1$s</string>
+    <string name="chat_promote_total_promote">累计推广%1$d人</string>
+    <string name="chat_promote_total_reward_item">累计奖励%1$s%2$s</string>
+
+    <string name="chat_title_black_list">黑名单</string>
+    <string name="chat_add_black_list">加入黑名单</string>
+    <string name="chat_remove_black_list">移出黑名单</string>
+    <string name="chat_user_black_message">已不再接收对方消息</string>
+    <string name="chat_add_black_warn">加入黑名单后，你将不再接收到对方的消息，确定将联系人 &lt;font color="#32B2F7"&gt;%1$s&lt;/font&gt; &lt;font color="#506278"&gt;移至黑名单&lt;/font&gt;吗？</string>
+    <string name="chat_add_black_user_message">对方拒绝接收你的消息！</string>
+    <string name="chat_add_black_success">已将对方加入黑名单！</string>
+    <string name="chat_add_black_fail">加入黑名单失败！</string>
+    <string name="chat_remove_black_success">已将对方移出黑名单！</string>
+    <string name="chat_remove_black_fail">移出黑名单失败！</string>
+    <string name="chat_click_look">点击查看</string>
+    <string name="chat_awarded_gift">已获得奖励</string>
+    <string name="chat_invite_qcode">邀请码</string>
+    <string name="chat_security_setting_tip1">密聊密码用于加密聊天消息和聊天文件，更换设备登录时需输入密聊密码才可解密历史加密消息，若忘记密码则无法解密历史加密消息，需设置新的密聊密码加密未来的消息，请自行保管好，防止遗失或泄露导致无法找回历史加密聊天消息！</string>
+    <string name="chat_login_register">登录/注册</string>
+    <string name="chat_collect">我的收藏</string>
+    <string name="chat_count_zero">0个</string>
+    <string name="chat_verify">实名认证</string>
+    <string name="chat_share_invite">分享邀请</string>
+    <string name="chat_app_download">App下载</string>
+    <string name="chat_secure_manager">安全管理</string>
+    <string name="chat_settings_center">设置中心</string>
+    <string name="chat_friend_verify">好友验证</string>
+    <string name="chat_check_update">检测更新</string>
+    <string name="chat_logout_account">退出账号</string>
+    <string name="chat_select_user">选择成员</string>
+    <string name="chat_lower_reward">下级奖励</string>
+    <string name="chat_condition_reward">条件奖励</string>
+    <string name="chat_to_settings">去设置</string>
+    <string name="chat_hot_room">热门群聊</string>
+    <string name="chat_replace_batch">换一批</string>
+    <string name="chat_immediate_join">马上加入</string>
+    <string name="chat_verify_question_tip">设置问题后，对方加我为好友时需先正确回答以下问 题的答案</string>
+    <string name="chat_set_question">请设置问题</string>
+    <string name="chat_set_answer">请设置答案</string>
+    <string name="chat_ait_default">[有人@我]</string>
+    <string name="chat_unread_reward">[%1$d赞赏]</string>
+    <string name="chat_unread_reward2">%1$d赞赏</string>
+    <string name="chat_mute_time">已禁言 %1$s</string>
+    <string name="chat_cancel_mute">解除</string>
+    <string name="chat_registered">已注册</string>
+    <string name="chat_add_card_picture">添加名片或相关图片</string>
+    <string name="chat_add_phone">添加电话号码</string>
+    <string name="chat_invite_add_room">邀请你加入群聊</string>
+    <string name="chat_invite_other_add_room">邀请对方加入群聊</string>
+    <string name="chat_red_packet_message_default">恭喜发财，大吉大利！</string>
+    <string name="chat_notification">公告</string>
+    <string name="chat_save_words_tip">请务必抄下助记词并存放至安全的地方，若助记词丢失，重装或换设备登录时将无法查看历史加密消息！并无法重置密聊密码！若助记词被他人获取，将可能获取你的信息！</string>
+    <string name="chat_copy">复制</string>
+    <string name="chat_thumb">点赞</string>
+    <string name="chat_reward">打赏</string>
+    <string name="chat_set_chat_password">请先设置密聊密码</string>
+    <string name="chat_chat_password_hint">8-16位数字、字母或符号组合</string>
+    <string name="chat_update_title">发现新版本</string>
+    <string name="chat_update_content">更新内容</string>
+    <string name="chat_input_chat_password">请输入密聊密码</string>
+    <string name="chat_saved_album">已保存至相册</string>
+    <string name="chat_saved_album_tip">视频已保存至相册，由于微信分享限制，请到微信上传视频来分享</string>
+    <string name="chat_continue_share_wechat">继续分享到微信</string>
+    <string name="chat_new_friend">新的朋友</string>
+    <string name="chat_recent_use">常用联系</string>
+    <string name="chat_room_message">群聊消息</string>
+    <string name="chat_friend_message">好友消息</string>
+    <string name="chat_network_broken">网络连接中断</string>
+    <string name="chat_coin_default_name">YCC/原链</string>
+    <string name="chat_file_empty">暂无文件</string>
+    <string name="chat_media_empty">暂无图片/视频</string>
+    <string name="chat_need_answer_question">需回答问题</string>
+    <string name="chat_input_answer">需回答问题</string>
+    <string name="chat_set_nick_name">设置昵称</string>
+    <string name="chat_set_nick_name_hint">取个名字吧！20字内</string>
+    <string name="chat_input_pay_password">请输入支付密码</string>
+    <string name="chat_need_pay">需支付</string>
+    <string name="chat_input_phone_code">请输入验证码</string>
+    <string name="chat_black_list_empty">暂无黑名单</string>
+    <string name="chat_friend_list_empty">暂无好友</string>
+    <string name="chat_invite_friend">邀请好友</string>
+    <string name="chat_friend_message_list_empty">暂无好友消息</string>
+    <string name="chat_start_chat">开启聊天</string>
+    <string name="chat_room_list_empty">暂无群聊</string>
+    <string name="chat_suggest_group">推荐群聊</string>
+    <string name="chat_room_message_list_empty">暂无群消息</string>
+    <string name="chat_contact_list_empty">暂无联系人</string>
+    <string name="chat_promote_list_empty">暂无记录</string>
+    <string name="chat_red_packet_list_empty">暂无红包记录</string>
+    <string name="chat_search_list_empty">没有匹配的对象</string>
+    <string name="chat_topic">标题</string>
+    <string name="chat_revoke">撤回</string>
+    <string name="chat_forward">转发</string>
+    <string name="chat_disable_mute">解除禁言</string>
+    <string name="chat_speak_communication_mode">开启听筒模式</string>
+    <string name="chat_speak_normal_mode">开启扬声器模式</string>
+    <string name="chat_multi_select">多选</string>
+    <string name="chat_select_time_title">选择时间</string>
+    <string name="chat_send_bty_red_packet">发了一个BTY红包</string>
+    <string name="chat_select_mute_time">选择禁言时间</string>
+    <string name="chat_forever">永远</string>
+    <string name="chat_24_hour">24小时</string>
+    <string name="chat_10_hour">10小时</string>
+    <string name="chat_2_hour">2小时</string>
+    <string name="chat_30_minute">30分钟</string>
+    <string name="chat_10_minute">10分钟</string>
+    <string name="chat_set_admin">设置管理员</string>
+    <string name="chat_member_delete">删除成员</string>
+    <string name="chat_add_friend_group">添加朋友/群</string>
+    <string name="chat_message_delete">删除聊天</string>
+    <string name="chat_add_room_helper">加入群助手</string>
+    <string name="chat_time">时间</string>
+    <string name="chat_reset">重置</string>
+    <string name="chat_select_coin_type">选择币种</string>
+    <string name="chat_friend_no_exits">暂未查找到该好友信息</string>
+    <string name="chat_encrypt_tip">加密聊天是指用户之间的聊天消息和聊天文件均为加密传输，只有参与者可解密查看，更换设备登录时需输入密聊密码才可解密历史加密消息，若忘记密码则无法解密历史加密消息，需设置新的密聊密码加密未来的消息。</string>
+    <string name="chat_back_encrypt_message">找回历史加密消息</string>
+    <string name="chat_back_encrypt_pwd_success">找回密聊密码成功</string>
+    <string name="chat_update_encrypt_pwd_success">上传密聊密码成功</string>
+
+    <!--考勤打卡-->
+    <string name="chat_title_check_work">考勤打卡</string>
+
+    <!--赞赏-->
+    <string name="chat_parsing_qr_fails">解析二维码失败</string>
+    <string name="chat_praise">赞赏</string>
+    <string name="chat_praise_title">赞赏详情</string>
+    <string name="chat_praise_price_label">赏金(估值)</string>
+    <string name="chat_action_praise">点赞</string>
+    <string name="chat_action_reward">打赏</string>
+    <string name="chat_action_praised">已赞</string>
+    <string name="chat_label_praise">赞</string>
+    <string name="chat_label_reward">赏</string>
+    <string name="chat_praise_empty">暂无赞赏</string>
+
+    <string name="chat_praise_ranking_list">赞赏榜单</string>
+    <string name="chat_praise_history_ranking">历史\n排行</string>
+    <string name="chat_praise_my_rank">我的排名</string>
+    <string name="chat_praise_rank_like1">本周点赞榜单</string>
+    <string name="chat_praise_rank_reward1">打赏榜单</string>
+    <string name="chat_praise_rank_like2">点赞榜单</string>
+    <string name="chat_praise_rank_reward2">本周打赏榜单</string>
+    <string name="chat_title_rank_history">历史排行</string>
+    <string name="chat_praise_my_rank_like">我的点赞排名</string>
+    <string name="chat_praise_my_rank_reward">我的打赏排名</string>
+    <string name="chat_praise_like_num">点赞数</string>
+    <string name="chat_praise_reward_amount">打赏估值</string>
+    <string name="chat_praise_no_rank">- -</string>
+</resources>

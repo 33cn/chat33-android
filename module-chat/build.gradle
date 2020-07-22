@@ -1,0 +1,51 @@
+apply from: config
+apply from: versions
+apply from: flavor_config
+
+android {
+    defaultConfig {
+
+    }
+}
+
+dependencies {
+    configurations.all {
+        resolutionStrategy {
+            force design
+        }
+    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(':chat-core')
+    implementation project(':lib-componentservice')
+    implementation project(':lib-update')
+    implementation project(':lib-picverify')
+    implementation project(':filepicker')
+    implementation project(':picture_library')
+    implementation project(':ucrop')
+
+    implementation flyco
+    implementation qmuiteam
+    implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    implementation 'cjt.library.wheel:camera:1.1.9'
+    // core
+    implementation 'com.liulishuo.okdownload:okdownload:1.0.5'
+    // provide sqlite to store breakpoints
+    implementation 'com.liulishuo.okdownload:sqlite:1.0.5'
+    // provide okhttp to connect to backend
+    // and then please import okhttp dependencies by yourself
+    implementation 'com.liulishuo.okdownload:okhttp:1.0.5'
+    implementation 'com.pl:wheelview:0.7.2'
+
+    kapt arouterCompiler
+    annotationProcessor arouterCompiler
+    kapt glideCompiler
+    annotationProcessor glideCompiler
+
+//    implementation navigationRuntime
+//    implementation navigationUI
+//    implementation navigationFragment
+//    implementation navigationRuntimeKtx
+//    implementation navigationUIKtx
+//    implementation navigationFragmentKtx
+}

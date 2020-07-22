@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">FilePicker</string>
+    <string name="file_picker_folder_desc">文件:%1$s&#160;&#160;|&#160;&#160;文件夹:%2$s</string>
+    <string name="file_picker_file_desc">%1$s&#160;&#160;|&#160;&#160;%2$s</string>
+    <string name="file_picker_selected_file_count">发送(%1$s/%2$s)</string>
+    <string-array name="file_picker_sort_list">
+        <item>按名称</item>
+        <item>按时间</item>
+        <item>按大小</item>
+        <item>按类型</item>
+    </string-array>
+    <string-array name="file_picker_sort_list_scan">
+        <item>按名称</item>
+        <item>按时间</item>
+        <item>按大小</item>
+    </string-array>
+
+    <string name="file_picker_title">文件</string>
+    <string name="file_picker_wechat_folder">微信文件夹</string>
+    <string name="file_picker_error_max_count">您最多只能选择%1$d个。</string>
+    <string name="file_picker_error_select_file">请选择文件</string>
+    <string name="file_picker_error_wechat_file_no_exits">微信文件夹不存在</string>
+    <string name="file_picker_desc">降序</string>
+    <string name="file_picker_asc">升序</string>
+    <string name="file_picker_select_title">请选择</string>
+    <string name="file_picker_select_file_title">文件选择</string>
+    <string name="file_picker_loading">加载中</string>
+    <string name="file_picker_all">全部</string>
+    <string name="file_picker_error_permission">您未授权 %1$s 权限, 请在权限管理中开启此权限。</string>
+    <string name="file_picker_tip">提示</string>
+    <string name="file_picker_ok">确认</string>
+    <string name="file_picker_cancel">取消</string>
+    <string name="file_picker_internal_card">内部存储设备</string>
+    <string name="file_picker_sd_card">SD卡</string>
+    <string name="file_picker_empty">空</string>
+    <string name="file_picker_take_a_photo">拍一张</string>
+    <string name="file_picker_sort">排序</string>
+
+</resources>

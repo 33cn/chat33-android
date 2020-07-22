@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_phone_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/chat_tips_friend_remark3"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_phone_tips"
+        android:paddingStart="3dp"
+        android:paddingEnd="5dp"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/tv_phone_remark"
+        android:layout_toEndOf="@+id/iv_phone"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp"
+        tool:text="18767549068" />
+
+    <TextView
+        android:id="@+id/tv_phone_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/iv_end"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="14sp"
+        tool:text="杭州的手机号" />
+
+    <ImageView
+        android:id="@+id/iv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@mipmap/icon_item_operate" />
+</RelativeLayout>

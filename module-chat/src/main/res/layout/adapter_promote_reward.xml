@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/img_operate">
+
+    <TextView
+        android:id="@+id/tv_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="UID 123456" />
+
+    <ImageView
+        android:id="@+id/chat_imageview"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_uid"
+        app:layout_constraintTop_toBottomOf="@+id/tv_uid"
+        app:srcCompat="@drawable/app_ic_selected" />
+
+    <TextView
+        android:id="@+id/chat_textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/chat_registered"
+        android:textColor="@color/chat_text_grey_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_imageview"
+        app:layout_constraintStart_toEndOf="@+id/chat_imageview"
+        app:layout_constraintTop_toTopOf="@+id/chat_imageview" />
+
+    <ImageView
+        android:id="@+id/iv_verify"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_textview2"
+        app:layout_constraintStart_toEndOf="@+id/chat_textview2"
+        app:layout_constraintTop_toTopOf="@+id/chat_textview2"
+        app:srcCompat="@drawable/ic_user_not_verified" />
+
+    <TextView
+        android:id="@+id/tv_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/chat_text_grey_light"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_verify"
+        app:layout_constraintStart_toEndOf="@+id/iv_verify"
+        app:layout_constraintTop_toTopOf="@+id/iv_verify"
+        tools:text="未实名" />
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TSC" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unit"
+        app:layout_constraintEnd_toStartOf="@+id/tv_unit"
+        app:layout_constraintTop_toTopOf="@+id/tv_unit"
+        tools:text="+2.99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

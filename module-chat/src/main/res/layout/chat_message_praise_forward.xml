@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_message_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_send_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:paddingLeft="17dp"
+        android:paddingTop="8dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/chat_text_grey_dark"
+        android:textColorLink="@color/chat_color_title"
+        android:textSize="16sp"
+        tools:text="[这里是群名]的聊天记录" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_message_title"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:minHeight="40dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="10dp"
+        tools:text="自己的昵称：这个内容最多显示四 行 昵称：有可能一个人就发了四行 谁谁谁：什么什么什么什么" />
+
+    <View
+        android:id="@+id/forward_divider"
+        android:layout_width="240dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_message"
+        android:layout_alignStart="@+id/tv_message_title"
+        android:layout_alignEnd="@+id/tv_message_title"
+        android:background="@color/chat_forward_divider_send" />
+
+    <TextView
+        android:id="@+id/tv_forward_count"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/forward_divider"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:text="@string/forward_count"
+        android:textSize="12sp" />
+</RelativeLayout>

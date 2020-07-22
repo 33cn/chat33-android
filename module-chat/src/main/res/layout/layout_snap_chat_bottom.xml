@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/snap_chat_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="-10dp"
+    android:layout_marginRight="-10dp"
+    android:layout_marginBottom="-10dp"
+    android:background="@drawable/img_operate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/snap_chat_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="70dp">
+
+            <ImageView
+                android:id="@+id/snap_chat_btn_input_type"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_chat_voice_snap" />
+
+            <com.fzm.chat33.widget.AudioRecordButton
+                android:id="@+id/snap_chat_record_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@+id/snap_chat_btn_image"
+                android:layout_toEndOf="@+id/snap_chat_btn_input_type"
+                android:background="@drawable/bg_chatroom_send_record_btn_snap"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/chat_snap_orange"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/snap_chat_edit_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toStartOf="@+id/snap_chat_btn_image"
+                android:layout_toEndOf="@+id/snap_chat_btn_input_type"
+                android:background="@color/chat_transparent"
+                android:hint="@string/chat_tips_input_say_sth"
+                android:imeOptions="flagNoExtractUi"
+                android:maxHeight="120dip"
+                android:maxLength="500"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/chat_text_grey_dark"
+                android:textColorHint="@color/chat_text_grey_light"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/snap_chat_btn_image"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_toStartOf="@+id/snap_chat_btn_close"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_chat_image_snap" />
+
+            <Button
+                android:id="@+id/snap_chat_btn_send"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/chat_transparent"
+                android:gravity="center"
+                android:text="@string/chat_tips_input_send"
+                android:textColor="@color/chat_snap_orange"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/snap_chat_btn_close"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_chat_close_snap" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

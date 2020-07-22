@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/empty_group_message" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/chat_room_message_list_empty"
+        android:textColor="@color/chat_text_grey_light"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_create_group"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:background="@drawable/shape_blue_r18"
+            android:gravity="center"
+            android:text="@string/chat_title_create_group1"
+            android:textColor="@color/chat_color_accent" />
+
+        <LinearLayout
+            android:id="@+id/ll_recommended_group"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_blue_r18"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/ic_recommended_group" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/chat_suggest_group"
+                android:textColor="@color/chat_color_accent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
